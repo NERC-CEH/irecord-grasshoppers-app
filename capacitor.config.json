@@ -1,0 +1,8 @@
+{
+  "appId": "com.natural_apptitude.grasshopper",
+  "appName": "iRecord Grasshoppers",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

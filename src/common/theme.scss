@@ -67,6 +67,8 @@
   --custom-color-complex-survey: #a77d11;
   --custom-color-complex-survey-shade: #6d520c;
   --custom-color-complex-survey-tint: #b98b14;
+
+  --ion-page-background: #f5f7f5;
 }
 
 // status bar
@@ -77,4 +79,8 @@ html.ios.plt-hybrid #status-bar-background {
   position: fixed;
   top: 0;
   z-index: 1000;
+}
+
+div.rounded {
+  border-radius: 10px;
 }

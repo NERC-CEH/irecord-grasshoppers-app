@@ -1,0 +1,10 @@
+#furtherReading {
+  ion-img {
+    width: 70%;
+    margin: 10px auto;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}

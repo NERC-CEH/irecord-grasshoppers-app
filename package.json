@@ -12,7 +12,8 @@
     "test": "jest --silent --passWithNoTests",
     "test:watch": "jest --watchAll",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch test",
-    "test:eslint": "eslint src --quiet --ext .jsx --ext .ts --ext .tsx --ext .js && echo '\\033[37;42;1m PASS \\033[00m'"
+    "test:eslint": "eslint src --quiet --ext .jsx --ext .ts --ext .tsx --ext .js && echo '\\033[37;42;1m PASS \\033[00m'",
+    "fetch:data": "cd src/common/data && node make.js"
   },
   "dependencies": {
     "@capacitor/android": "^3.4.3",
@@ -51,6 +52,7 @@
     "@babel/runtime": "^7.19.0",
     "@capacitor/cli": "^3.4.3",
     "@flumens/eslint-config": "^2.0.1",
+    "@flumens/fetch-onedrive-excel": "^0.3.0",
     "@flumens/webpack-config": "^4.2.0",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",

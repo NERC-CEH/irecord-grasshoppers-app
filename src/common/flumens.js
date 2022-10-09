@@ -7,6 +7,7 @@ export { default as MenuAttrItem } from '@flumens/ionic/dist/components/MenuAttr
 export { default as Section } from '@flumens/ionic/dist/components/Section';
 export { default as Collapse } from '@flumens/ionic/dist/components/Collapse';
 export { default as device } from '@flumens/ionic/dist/utils/device';
+export { default as Gallery } from '@flumens/ionic/dist/components/Gallery';
 export { useToast, useAlert, useLoader } from '@flumens/ionic/dist/hooks';
 export { default as initAnalytics } from '@flumens/ionic/dist/utils/analytics';
 export {

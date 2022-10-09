@@ -13,4 +13,10 @@ appConfig.plugins.unshift(
   new webpack.EnvironmentPlugin(development)
 );
 
+appConfig.module.rules.push({
+  test: /(\.mp3)/,
+  loader: 'file-loader',
+  options: { name: './[name].[ext]' },
+});
+
 module.exports = appConfig;

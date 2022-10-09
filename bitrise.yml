@@ -19,28 +19,28 @@ trigger_map:
   - push_branch: '*'
     workflow: ci
 workflows:
-  android:
-    steps:
-      - change-android-versioncode-and-versionname@1:
-          inputs:
-            - build_gradle_path: $BITRISE_SOURCE_DIR/android/app/build.gradle
-            - version_code_offset: '2000'
-            - new_version_name: $NPM_PACKAGE_VERSION
-      - android-build@0:
-          inputs:
-            - module: app
-            - variant: release\ndebug
-            - build_type: aab
-            - project_location: $BITRISE_SOURCE_DIR/android
-      - sign-apk@1:
-          inputs:
-            - debuggable_permitted: 'false'
-            - verbose_log: 'true'
-            - android_app: $BITRISE_AAB_PATH
+  # android:
+  #   steps:
+  #     - change-android-versioncode-and-versionname@1:
+  #         inputs:
+  #           - build_gradle_path: $BITRISE_SOURCE_DIR/android/app/build.gradle
+  #           - version_code_offset: '2000'
+  #           - new_version_name: $NPM_PACKAGE_VERSION
+  #     - android-build@0:
+  #         inputs:
+  #           - module: app
+  #           - variant: release\ndebug
+  #           - build_type: aab
+  #           - project_location: $BITRISE_SOURCE_DIR/android
+  # - sign-apk@1:
+  #     inputs:
+  #       - debuggable_permitted: 'false'
+  #       - verbose_log: 'true'
+  #       - android_app: $BITRISE_AAB_PATH
   ci:
     before_run:
       - web
-      - android
+      # - android
       - ios
     after_run:
       - deploy

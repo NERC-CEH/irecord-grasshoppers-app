@@ -16,30 +16,23 @@ const FurtherReading = () => (
       <Section>
         <P>
           <IonImg src={newnaturalistImage} />
-          Ted Benton's{' '}
-          <a href="http://www.newnaturalists.com/product/9780007277247/Grasshoppers+and+Crickets+">
-            New Naturalist Grasshoppers & Crickets
-          </a>{' '}
-          is an outstanding, comprehensive, new book covering each species in
-          detail (identification, life cycle, habitat, behaviour, ecology,
-          distribution and conservation). In addition, there are in-depth
-          general chapters on topics such as anatomy & physiology, life cycles,
-          courtship & reproduction, and sexual selection. The book contains a
-          DVD with fascinating video clips showing song, egg laying and other
-          bevaviour of many species.
+          Ted Benton's New Naturalist Grasshoppers & Crickets is an outstanding,
+          comprehensive, new book covering each species in detail
+          (identification, life cycle, habitat, behaviour, ecology, distribution
+          and conservation). In addition, there are in-depth general chapters on
+          topics such as anatomy & physiology, life cycles, courtship &
+          reproduction, and sexual selection. The book contains a DVD with
+          fascinating video clips showing song, egg laying and other bevaviour
+          of many species.
         </P>
 
         <P>
           <IonImg src={photographicguideImage} />
-          An excellent identification tool is the{' '}
-          <a href="http://www.wildguideuk.com/wguk_books/grasshopper_book/grasshopper_book.html">
-            Photographic Guide to the Grasshoppers & Crickets of Britain &
-            Ireland
-          </a>{' '}
-          by Martin Evans and Roger Edmondson, which comprehensively illustrates
-          the characteristics of males and females, adults and young and the
-          different colour forms of each species, and contains a very useful
-          photographic key.
+          An excellent identification tool is the Photographic Guide to the
+          Grasshoppers & Crickets of Britain & Ireland by Martin Evans and Roger
+          Edmondson, which comprehensively illustrates the characteristics of
+          males and females, adults and young and the different colour forms of
+          each species, and contains a very useful photographic key.
         </P>
 
         <P>
@@ -79,15 +72,6 @@ const FurtherReading = () => (
           available second-hand. It provides detailed species accounts and
           general chapters, county-level distribution maps, and the basis for
           the song diagrams used in this app.
-        </P>
-
-        <P>
-          There are a range of excellent county-level atlases and publications.
-          You can find a list of them here:{' '}
-          <a href="http://www.orthoptera.org.uk/recording/node/364">
-            Orthoptera
-          </a>
-          .
         </P>
       </Section>
     </Main>

@@ -8,6 +8,7 @@ import {
 } from '@ionic/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
+import { Trans as T } from 'react-i18next';
 import { expandOutline, volumeHighOutline } from 'ionicons/icons';
 import { Species } from 'common/data/species';
 import { Main } from '@flumens';
@@ -114,7 +115,9 @@ const SpeciesProfile: FC<Props> = ({ species }) => {
           {species.description && (
             <>
               <h3>Description: </h3>
-              <p>{species.description}</p>
+              <p>
+                <T>{species.description}</T>
+              </p>
             </>
           )}
 
@@ -151,7 +154,9 @@ const SpeciesProfile: FC<Props> = ({ species }) => {
           {species.whenToSee && (
             <>
               <h3>When to see: </h3>
-              <p>{species.whenToSee}</p>
+              <p>
+                <T>{species.whenToSee}</T>
+              </p>
             </>
           )}
 
@@ -179,7 +184,9 @@ const SpeciesProfile: FC<Props> = ({ species }) => {
           {species.whereToSee && (
             <>
               <h3>Where to see </h3>
-              <p>{species.whereToSee}</p>
+              <p>
+                <T>{species.whereToSee}</T>
+              </p>
             </>
           )}
         </IonCardContent>

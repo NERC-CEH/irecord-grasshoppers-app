@@ -1,4 +1,8 @@
-.info {
+#info {
+  ion-content {
+    --padding-top: env(safe-area-inset-top) !important;
+  }
+
   .app-title {
     margin: 0 auto;
     width: 90%;

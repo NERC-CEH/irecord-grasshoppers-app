@@ -128,6 +128,22 @@ const SpeciesProfile: FC<Props> = ({ species }) => {
             </>
           )}
 
+          {species.whenToSee && (
+            <>
+              <h3>When to see: </h3>
+              <p>
+                <T>{species.whenToSee}</T>
+              </p>
+            </>
+          )}
+
+          {species.whatItEats && (
+            <>
+              <h3>What it eats: </h3>
+              <p>{species.whatItEats}</p>
+            </>
+          )}
+
           {species.sounds && (
             <>
               <h3>Sounds: </h3>
@@ -151,19 +167,12 @@ const SpeciesProfile: FC<Props> = ({ species }) => {
             </>
           )}
 
-          {species.whenToSee && (
+          {species.whereToSee && (
             <>
-              <h3>When to see: </h3>
+              <h3>Where to see </h3>
               <p>
-                <T>{species.whenToSee}</T>
+                <T>{species.whereToSee}</T>
               </p>
-            </>
-          )}
-
-          {species.whatItEats && (
-            <>
-              <h3>What it eats: </h3>
-              <p>{species.whatItEats}</p>
             </>
           )}
 
@@ -176,17 +185,8 @@ const SpeciesProfile: FC<Props> = ({ species }) => {
 
           {species.similarSpecies && (
             <>
-              <h3>What it eats: </h3>
+              <h3>Similar species: </h3>
               <p>{species.similarSpecies}</p>
-            </>
-          )}
-
-          {species.whereToSee && (
-            <>
-              <h3>Where to see </h3>
-              <p>
-                <T>{species.whereToSee}</T>
-              </p>
             </>
           )}
         </IonCardContent>

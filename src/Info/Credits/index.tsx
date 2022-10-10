@@ -10,12 +10,11 @@ export default () => (
     <Main>
       <Section>
         <P>
-          We would like to thank{' '}
-          <a href="http://www.denysovenden.co.uk">Denys Ovenden</a> for
-          permission to use his excellent watercolour illustrations of
-          grasshoppers and related insects, which he originally produced for the
-          1988 atlas "Grasshoppers and Allied Insects of Great Britain and
-          Ireland" by Judith Marshall and Chris Haes.
+          We would like to thank Denys Ovenden for permission to use his
+          excellent watercolour illustrations of grasshoppers and related
+          insects, which he originally produced for the 1988 atlas "Grasshoppers
+          and Allied Insects of Great Britain and Ireland" by Judith Marshall
+          and Chris Haes.
         </P>
 
         <P>

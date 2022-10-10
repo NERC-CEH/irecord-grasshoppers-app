@@ -26,12 +26,7 @@ const SpeciesList = () => {
   const hideSpeciesModal = () => setSpeciesProfile(undefined);
 
   const speciesTile = (sp: Species) => {
-    const {
-      thumbnail: thumbnailSrc,
-      commonName,
-      id,
-      thumbnail_background: thumbnailBackground,
-    } = sp;
+    const { thumbnail: thumbnailSrc, commonName, id, backgroundThumbnail } = sp;
 
     const viewSpecies = (e: SyntheticEvent) => {
       e.preventDefault();
@@ -65,8 +60,8 @@ const SpeciesList = () => {
           )}
 
           <img className="thumbnail" src={thumbnailSrc} />
-          {thumbnailBackground && (
-            <img className="thumbnail-background" src={thumbnailBackground} />
+          {backgroundThumbnail && (
+            <img className="thumbnail-background" src={backgroundThumbnail} />
           )}
           <IonLabel className="common-name">{commonName}</IonLabel>
         </div>

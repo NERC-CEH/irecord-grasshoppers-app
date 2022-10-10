@@ -48,9 +48,10 @@
       overflow: hidden;
 
       .thumbnail {
+        margin: 8% 0% 7%;
         width: 100%;
         padding: 5px;
-        min-height: 120px;
+        min-height: 120px; // fixes loading image jitter
         max-width: none;
         z-index: 10;
       }

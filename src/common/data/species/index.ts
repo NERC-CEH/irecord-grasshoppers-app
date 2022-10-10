@@ -35,7 +35,7 @@ export interface SpeciesInfo {
 
 interface Resource {
   thumbnail?: string;
-  thumbnail_background?: string;
+  backgroundThumbnail?: string;
   map?: string;
   sonogram?: string;
   sound?: any;

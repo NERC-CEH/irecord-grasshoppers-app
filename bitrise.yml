@@ -93,9 +93,9 @@ workflows:
             - bundle_version: $BITRISE_BUILD_NUMBER
             - bundle_version_short: $NPM_PACKAGE_VERSION
             - info_plist_file: ios/App/App/Info.plist
-      - xcode-archive@3:
-          inputs:
-            - export_method: app-store
+      # - xcode-archive@3:
+      #     inputs:
+      #       - export_method: app-store
   web:
     steps:
       - nvm@1: {}

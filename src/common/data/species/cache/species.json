@@ -31,7 +31,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Unarmed Stick-insect"
+    "similarSpecies": "Common Green Grasshopper, Stripe-winged Grasshopper, Heath Grasshopper"
   },
   {
     "id": "meadowgrass",
@@ -65,7 +65,7 @@
       "short",
       "long"
     ],
-    "similarSpecies": "Prickly Stick-insect"
+    "similarSpecies": "Lesser Marsh Grasshopper, Large Marsh Grasshopper"
   },
   {
     "id": "darkbush",
@@ -98,7 +98,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Jamaican Field Cricket, Tropical House Cricket"
+    "similarSpecies": "Grey Bush-cricket, Bog Bush-cricket, Roesel's Bush-cricket"
   },
   {
     "id": "roesels",
@@ -131,7 +131,7 @@
       "short",
       "long"
     ],
-    "similarSpecies": "Desert Locust, Migratory Locust"
+    "similarSpecies": "Bog Bush-cricket, Grey Bush-cricket, Dark Bush-cricket"
   },
   {
     "id": "speckledbush",
@@ -164,7 +164,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Lesne's Earwig, Common Earwig"
+    "similarSpecies": "Southern Oak Bush-cricket, Short-winged Conehead, OakBush-cricket, Great Green Bush-cricket"
   },
   {
     "id": "comgreen",
@@ -197,7 +197,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "None"
+    "similarSpecies": "Field Grasshopper, Stripe-winged Grasshopper, Woodland Grasshopper"
   },
   {
     "id": "longcone",
@@ -228,7 +228,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Tawny Cockroach"
+    "similarSpecies": "Short-winged Conehead, Great Green Bush-cricket"
   },
   {
     "id": "lessermarsh",
@@ -292,7 +292,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Common Green Grasshopper, Stripe-winged Grasshopper, Heath Grasshopper"
+    "similarSpecies": "Southern Oak Bush-cricket, SpeckledBush-cricket, Great Green Bush-cricket"
   },
   {
     "id": "slenground",
@@ -323,7 +323,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Lesser Marsh Grasshopper, Large Marsh Grasshopper"
+    "similarSpecies": "Cepero's Groundhopper, Common Groundhopper"
   },
   {
     "id": "comground",
@@ -355,7 +355,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Field Grasshopper, Mottled Grasshopper"
+    "similarSpecies": "Slender Groundhopper, Cepero's Groundhopper"
   },
   {
     "id": "shortcone",
@@ -389,7 +389,7 @@
       "short",
       "long"
     ],
-    "similarSpecies": "Short-winged Conehead, Great Green Bush-cricket"
+    "similarSpecies": "Speckled Bush-cricket, Long-winged Conehead"
   },
   {
     "id": "mottled",
@@ -422,7 +422,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Speckled Bush-cricket, Long-winged Conehead"
+    "similarSpecies": "Field Grasshopper, Rufous Grasshopper, Mottled Grasshopper"
   },
   {
     "id": "greatgreen",
@@ -452,7 +452,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Great Green Bush Cricket, Sickle-bearing Bush-cricket"
+    "similarSpecies": "Wartbiter, Sickle-bearing Bush-cricket, Long-winged Conehead, Oak Bush-cricket, Specled Bush-cricket"
   },
   {
     "id": "stripewing",
@@ -480,7 +480,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Lesser Cockroach, Tawny Cockroach"
+    "similarSpecies": "Common Green Grasshopper, Field Grasshopper"
   },
   {
     "id": "southernoak",
@@ -510,7 +510,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Dusky Cockroach, Lesser Cockroach"
+    "similarSpecies": "Oak Bush-cricket, Speckled Bush-cricket"
   },
   {
     "id": "bogbush",
@@ -542,7 +542,7 @@
       "short",
       "long"
     ],
-    "similarSpecies": "Dusky Cockroach, Tawny Cockroach"
+    "similarSpecies": "Roesel’s Bush Cricket, Grey Bush-cricket, Dark Bush-cricket"
   },
   {
     "id": "greybush",
@@ -572,7 +572,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Lesser Marsh Grasshopper, Meadow Grasshopper"
+    "similarSpecies": "Dark Bush-cricket, Roesel's Bush-cricket, Bog Bush-cricke"
   },
   {
     "id": "woodlandgrass",
@@ -601,7 +601,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Short-winged Earwig, Lesne's Earwig"
+    "similarSpecies": "Common Green Grasshopper, Field Grasshopper, Stripe-winged Grasshopper"
   },
   {
     "id": "woodcricket",
@@ -630,7 +630,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Short-winged Earwig, Common Earwig"
+    "similarSpecies": "Scaly Cricket"
   },
   {
     "id": "ceperos",
@@ -659,7 +659,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Field Grasshopper, Mottled Grasshopper"
+    "similarSpecies": "Slender Groundhopper, Common Groundhopper"
   },
   {
     "id": "rufous",
@@ -688,7 +688,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "other species of Mole Cricket"
+    "similarSpecies": "Field Grasshopper, Mottled Grasshopper"
   },
   {
     "id": "house",
@@ -721,7 +721,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Field Cricket"
+    "similarSpecies": "Jamaican Field Cricket, Tropical House Cricket"
   },
   {
     "id": "scaly",
@@ -750,7 +750,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Southern Field Cricket"
+    "similarSpecies": "Wood Cricket"
   },
   {
     "id": "largemarsh",
@@ -779,7 +779,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Common Earwig"
+    "similarSpecies": "Meadow Grasshopper, but this is not as big and does not have such distinctive hind lg markings"
   },
   {
     "id": "heathgrass",
@@ -809,7 +809,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Southern Oak Bush-cricket, Short-winged Conehead, Oak Bush-cricket, Great Green Bush-cricket"
+    "similarSpecies": "Field Grasshopper, Mottled Grasshopper"
   },
   {
     "id": "fieldcricket",
@@ -838,7 +838,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Desert Locust, Egyptian Grasshopper"
+    "similarSpecies": "Southern Field Cricket"
   },
   {
     "id": "mole",
@@ -868,7 +868,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "other species of mantis"
+    "similarSpecies": "other species of Mole Cricket"
   },
   {
     "id": "wart",
@@ -896,7 +896,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Oak Bush-cricket, Speckled Bush-cricket"
+    "similarSpecies": "Great Green Bush Cricket, Sicke-bearing Bush-cricket"
   },
   {
     "id": "egyptian",
@@ -927,7 +927,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Southern Oak Bush-cricket, Speckled Bush-cricket, Great Green Bush-cricket"
+    "similarSpecies": "Desert Locust, Migratory Locust"
   },
   {
     "id": "southernfield",
@@ -957,7 +957,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Roesel’s Bush Cricket, Grey Bush-cricket, Dark Bush-cricket"
+    "similarSpecies": "Field Cricket"
   },
   {
     "id": "sickle",
@@ -984,7 +984,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Bog Bush-cricket, Grey Bush-cricket, Dark Bush-cricket"
+    "similarSpecies": "Great Green Bush-cricket, Lng-winged Conehead"
   },
   {
     "id": "desert",
@@ -1013,7 +1013,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Field Grasshopper, Rufous Grasshopper, Mottled Grasshopper"
+    "similarSpecies": "Egyptian Grasshopper, Migratory Locust"
   },
   {
     "id": "migratory",
@@ -1040,7 +1040,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Scaly Cricket"
+    "similarSpecies": "Desert Locust, Egyptian Grasshopper"
   },
   {
     "id": "lesmottled",
@@ -1069,7 +1069,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "None"
+    "similarSpecies": "Common Green Grasshopper, Mottled Grasshopper, Field Grashopper"
   },
   {
     "id": "bluewinged",
@@ -1124,7 +1124,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Common Green Grasshopper, Field Grasshopper, Stripe-winged Grasshopper"
+    "similarSpecies": "Lesser Marsh Grasshopper, Meadow Grasshopper"
   },
   {
     "id": "tree",
@@ -1152,7 +1152,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Field Grasshopper, Stripe-winged Grasshopper, Woodland Grasshopper"
+    "similarSpecies": "None"
   },
   {
     "id": "earwig",
@@ -1183,7 +1183,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Australian Cockroach"
+    "similarSpecies": "Short-winged Earwig, Lesne's Earwig"
   },
   {
     "id": "lesnes",
@@ -1212,7 +1212,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "American Cockroach"
+    "similarSpecies": "Short-winged Earwig, Common Earwi"
   },
   {
     "id": "lesearwig",
@@ -1243,7 +1243,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Great Green Bush-cricket, Long-winged Conehead"
+    "similarSpecies": "Common Earwig"
   },
   {
     "id": "shortearwig",
@@ -1269,7 +1269,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Grey Bush-cricket, Bog Bush-cricket, Roesel's Bush-cricket"
+    "similarSpecies": "Lesne's Earwig, Common Earwig"
   },
   {
     "id": "lesroach",
@@ -1298,7 +1298,7 @@
       "short",
       "long"
     ],
-    "similarSpecies": "Dark Bush-cricket, Roesel's Bush-cricket, Bog Bush-cricket"
+    "similarSpecies": "Dusky Cockroach, Tawny Cockroach"
   },
   {
     "id": "duskyroach",
@@ -1324,7 +1324,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Wood Cricket"
+    "similarSpecies": "Lesser Cockroach, Tawny Cockroach"
   },
   {
     "id": "tawnyroach",
@@ -1352,7 +1352,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Egyptian Grasshopper, Migratory Locust"
+    "similarSpecies": "Dusky Cockroach, Lesser Cockroach"
   },
   {
     "id": "ozroach",
@@ -1382,7 +1382,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Common Green Grasshopper, Field Grasshopper"
+    "similarSpecies": "American Cockroach"
   },
   {
     "id": "orientalroach",
@@ -1413,7 +1413,7 @@
       "short",
       "long"
     ],
-    "similarSpecies": "Common Green Grasshopper, Mottled Grasshopper, Field Grasshopper"
+    "similarSpecies": "None"
   },
   {
     "id": "germanroach",
@@ -1442,7 +1442,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Meadow Grasshopper, but this is not as big and does not have such distinctive hind leg markings"
+    "similarSpecies": "Tawny Cockroach"
   },
   {
     "id": "amroach",
@@ -1471,7 +1471,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Slender Groundhopper, Common Groundhopper"
+    "similarSpecies": "Australian Cockroach"
   },
   {
     "id": "mantis",
@@ -1498,7 +1498,7 @@
     "adultWings": [
       "long"
     ],
-    "similarSpecies": "Cepero's Groundhopper, Common Groundhopper"
+    "similarSpecies": "other species of mantis"
   },
   {
     "id": "unarmed",
@@ -1526,7 +1526,7 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Slender Groundhopper, Cepero's Groundhopper"
+    "similarSpecies": "Prickly Stick-insect"
   },
   {
     "id": "prickly",
@@ -1553,6 +1553,6 @@
     "adultWings": [
       "short"
     ],
-    "similarSpecies": "Wartbiter, Sickle-bearing Bush-cricket, Long-winged Conehead, Oak Bush-cricket, Speckled Bush-cricket"
+    "similarSpecies": "Unarmed Stick-insect"
   }
 ]

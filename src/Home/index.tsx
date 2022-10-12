@@ -8,11 +8,17 @@ import {
   IonRouterOutlet,
 } from '@ionic/react';
 import { Redirect, Route } from 'react-router';
-import { menuOutline, bookOutline, layersOutline } from 'ionicons/icons';
+import {
+  informationCircleOutline,
+  menuOutline,
+  bookOutline,
+  layersOutline,
+} from 'ionicons/icons';
 import { observer } from 'mobx-react';
 import Info from './Info';
 import Species from './Species';
 import UserSurveys from './UserSurveys';
+import Menu from './Menu';
 
 const HomeController: FC = () => {
   return (
@@ -22,6 +28,7 @@ const HomeController: FC = () => {
         <Route path="/home/info" component={Info} exact />
         <Route path="/home/species" component={Species} exact />
         <Route path="/home/user-surveys" component={UserSurveys} exact />
+        <Route path="/home/menu" component={Menu} exact />
       </IonRouterOutlet>
 
       <IonTabBar slot="bottom">
@@ -36,8 +43,13 @@ const HomeController: FC = () => {
         </IonTabButton>
 
         <IonTabButton tab="/home/info" href="/home/info">
-          <IonIcon icon={menuOutline} />
+          <IonIcon icon={informationCircleOutline} />
           <IonLabel>Info</IonLabel>
+        </IonTabButton>
+
+        <IonTabButton tab="/home/menu" href="/home/menu">
+          <IonIcon icon={menuOutline} />
+          <IonLabel>Menu</IonLabel>
         </IonTabButton>
       </IonTabBar>
     </IonTabs>

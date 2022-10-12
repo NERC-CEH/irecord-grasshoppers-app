@@ -9,6 +9,8 @@ const CONFIG = {
 
   backend: {
     url: backendUrl,
+    clientId: process.env.APP_BACKEND_CLIENT_ID as string,
+    clientPass: process.env.APP_BACKEND_CLIENT_PASS as string,
   },
 };
 

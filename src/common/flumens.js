@@ -18,3 +18,11 @@ export {
 } from '@flumens/ionic/dist/models/Model';
 export { default as Store } from '@flumens/ionic/dist/models/Store';
 export { default as initStoredSamples } from '@flumens/ionic/dist/models/initStoredSamples';
+export {
+  default as DrupalUserModel,
+  Attrs as DrupalUserModelAttrs,
+} from '@flumens/ionic/dist/models/DrupalUserModel';
+export { default as InputWithValidation } from '@flumens/ionic/dist/components/InputWithValidation';
+export { default as InfoMessage } from '@flumens/ionic/dist/components/InfoMessage';
+export { default as MenuAttrToggle } from '@flumens/ionic/dist/components/MenuAttrToggle';
+export * from '@flumens/ionic/dist/utils/type';

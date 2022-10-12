@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import { setupIonicReact, isPlatform } from '@ionic/react';
 import appModel from 'models/app';
+import userModel from 'models/user';
 import { StatusBar, Style as StatusBarStyle } from '@capacitor/status-bar';
 import { SplashScreen } from '@capacitor/splash-screen';
 import i18n from 'i18next';
@@ -8,7 +9,6 @@ import config from 'common/config';
 import { configure as mobxConfig } from 'mobx';
 import { initAnalytics } from '@flumens';
 import { App as AppPlugin } from '@capacitor/app';
-
 import { initReactI18next } from 'react-i18next';
 import App from './App';
 
@@ -29,6 +29,7 @@ setupIonicReact({
 
 async function init() {
   await appModel.ready;
+  await userModel.ready;
 
   appModel.attrs.sendAnalytics &&
     initAnalytics({

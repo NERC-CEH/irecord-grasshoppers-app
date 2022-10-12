@@ -26,3 +26,4 @@ export { default as InputWithValidation } from '@flumens/ionic/dist/components/I
 export { default as InfoMessage } from '@flumens/ionic/dist/components/InfoMessage';
 export { default as MenuAttrToggle } from '@flumens/ionic/dist/components/MenuAttrToggle';
 export * from '@flumens/ionic/dist/utils/type';
+export { default as LongPressFabButton } from '@flumens/ionic/dist/components/LongPressFabButton';

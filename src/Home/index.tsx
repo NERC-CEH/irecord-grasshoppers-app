@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 import {
   IonTabs,
   IonTabButton,
@@ -6,8 +6,10 @@ import {
   IonIcon,
   IonTabBar,
   IonRouterOutlet,
+  NavContext,
 } from '@ionic/react';
 import { Redirect, Route } from 'react-router';
+import { LongPressFabButton } from '@flumens';
 import {
   informationCircleOutline,
   menuOutline,
@@ -19,8 +21,19 @@ import Info from './Info';
 import Species from './Species';
 import UserSurveys from './UserSurveys';
 import Menu from './Menu';
+import grasshopperIcon from './grasshopper.svg';
+import './styles.scss';
 
+const LabelComponent = (
+  <div className="container">
+    <IonIcon icon={grasshopperIcon} />
+    <IonLabel> Record</IonLabel>
+  </div>
+);
 const HomeController: FC = () => {
+  const { navigate } = useContext(NavContext);
+  const navigateToPrimarySurvey = () => navigate(`/survey/main`);
+
   return (
     <IonTabs>
       <IonRouterOutlet>
@@ -40,6 +53,15 @@ const HomeController: FC = () => {
         <IonTabButton tab="/home/user-surveys" href="/home/user-surveys">
           <IonIcon icon={layersOutline} />
           <IonLabel>Records</IonLabel>
+        </IonTabButton>
+
+        <IonTabButton>
+          <LongPressFabButton
+            onClick={navigateToPrimarySurvey}
+            label={LabelComponent}
+          >
+            <div />
+          </LongPressFabButton>
         </IonTabButton>
 
         <IonTabButton tab="/home/info" href="/home/info">

@@ -8,7 +8,6 @@ import {
 } from '@ionic/react';
 import { observer } from 'mobx-react';
 import { Page, Main } from '@flumens';
-import { Trans as T } from 'react-i18next';
 
 const UserSurveyComponent = () => {
   const initSegment = 'pending';
@@ -22,15 +21,11 @@ const UserSurveyComponent = () => {
         <IonToolbar>
           <IonSegment onIonChange={onSegmentClick} value={segment}>
             <IonSegmentButton value="pending">
-              <IonLabel className="ion-text-wrap">
-                <T>Pending</T>
-              </IonLabel>
+              <IonLabel className="ion-text-wrap">Pending</IonLabel>
             </IonSegmentButton>
 
             <IonSegmentButton value="uploaded">
-              <IonLabel className="ion-text-wrap">
-                <T>Uploaded</T>
-              </IonLabel>
+              <IonLabel className="ion-text-wrap">Uploaded</IonLabel>
             </IonSegmentButton>
           </IonSegment>
         </IonToolbar>

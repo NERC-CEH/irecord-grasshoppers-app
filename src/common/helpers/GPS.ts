@@ -1,4 +1,4 @@
-import { Geolocation, numberPosition } from '@capacitor/geolocation';
+import { Geolocation, Position } from '@capacitor/geolocation';
 
 export type Location = {
   latitude: number;
@@ -27,7 +27,7 @@ const API = {
       enableHighAccuracy: true,
     };
 
-    const onPosition = (position: numberPosition, err: Error) => {
+    const onPosition = (position: Position | null, err?: Error | null) => {
       if (err) {
         callback && callback(new Error(err.message));
         return;

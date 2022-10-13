@@ -16,12 +16,12 @@ import {
   bookOutline,
   layersOutline,
 } from 'ionicons/icons';
+import grasshopperIcon from 'common/images/grasshopper.svg';
 import { observer } from 'mobx-react';
 import Info from './Info';
 import Species from './Species';
 import UserSurveys from './UserSurveys';
 import Menu from './Menu';
-import grasshopperIcon from './grasshopper.svg';
 import './styles.scss';
 
 const LabelComponent = (
@@ -32,7 +32,7 @@ const LabelComponent = (
 );
 const HomeController: FC = () => {
   const { navigate } = useContext(NavContext);
-  const navigateToPrimarySurvey = () => navigate(`/survey/main`);
+  const navigateToPrimarySurvey = () => navigate(`/survey/default`);
 
   return (
     <IonTabs>

@@ -1,4 +1,4 @@
-import { useState, SyntheticEvent } from 'react';
+import { FC, useState, SyntheticEvent } from 'react';
 import { observer } from 'mobx-react';
 import {
   IonGrid,
@@ -13,12 +13,22 @@ import {
   IonLabel,
 } from '@ionic/react';
 import { Main } from '@flumens';
-import { arrowBack, volumeHighOutline } from 'ionicons/icons';
+import {
+  arrowBack,
+  volumeHighOutline,
+  informationCircleOutline,
+} from 'ionicons/icons';
 import species, { Species } from 'common/data/species';
 import SpeciesProfile from './components/SpeciesProfile';
 import './styles.scss';
 
-const SpeciesList = () => {
+type Props = {
+  onSpeciesClick?: (sp: Species) => void;
+};
+
+const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
+  const isSurvey = !!onSpeciesClick;
+
   const [speciesProfile, setSpeciesProfile] = useState<Species | undefined>(
     undefined
   );
@@ -34,7 +44,9 @@ const SpeciesList = () => {
       setSpeciesProfile(sp);
     };
 
-    const onClick = viewSpecies;
+    const selectSpecies = () => isSurvey && onSpeciesClick(sp);
+
+    const onClick = isSurvey ? selectSpecies : viewSpecies;
 
     const playSound = (e: SyntheticEvent) => {
       e.preventDefault();
@@ -42,6 +54,24 @@ const SpeciesList = () => {
 
       const sound = new Audio(sp.sound);
       sound.play();
+    };
+
+    const infoBox = () => {
+      if (isSurvey) {
+        return (
+          <div className="info-box" onClick={viewSpecies}>
+            <IonIcon icon={informationCircleOutline} />
+          </div>
+        );
+      }
+
+      if (!sp.sound) return null;
+
+      return (
+        <div className="info-box" onClick={playSound}>
+          <IonIcon icon={volumeHighOutline} />
+        </div>
+      );
     };
 
     return (
@@ -53,11 +83,7 @@ const SpeciesList = () => {
         onClick={onClick}
       >
         <div className="container">
-          {sp.sound && (
-            <div className="info-box" onClick={playSound}>
-              <IonIcon icon={volumeHighOutline} />
-            </div>
-          )}
+          {infoBox()}
 
           <img className="thumbnail" src={thumbnailSrc} />
           {backgroundThumbnail && (

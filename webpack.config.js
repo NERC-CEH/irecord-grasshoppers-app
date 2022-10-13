@@ -6,10 +6,12 @@ const required = [
   'APP_SENTRY_KEY',
   'APP_BACKEND_CLIENT_ID',
   'APP_BACKEND_CLIENT_PASS',
+  'APP_MAPBOX_MAP_KEY',
 ];
 
 const development = {
   APP_BACKEND_URL: '',
+  APP_BACKEND_INDICIA_URL: '',
 };
 
 appConfig.plugins.unshift(

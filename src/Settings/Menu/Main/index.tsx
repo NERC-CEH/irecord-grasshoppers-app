@@ -14,8 +14,42 @@ import {
   arrowUndoOutline,
   personRemoveOutline,
   shareSocialOutline,
+  trashOutline,
 } from 'ionicons/icons';
 import './styles.scss';
+
+function useDeleteAllSamplesDialog(deleteAllSamples: any) {
+  const alert = useAlert();
+
+  const showDeleteAllSamplesDialog = () =>
+    alert({
+      header: 'Remove All',
+      message: (
+        <>
+          Are you sure you want to remove all successfully synchronised local
+          records?
+          <p>
+            <i>
+              <b>Note:</b> records on the server will not be touched.
+            </i>
+          </p>
+        </>
+      ),
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+        },
+        {
+          text: 'Remove',
+          role: 'destructive',
+          handler: deleteAllSamples,
+        },
+      ],
+    });
+
+  return showDeleteAllSamplesDialog;
+}
 
 function resetDialog(resetApp: any, alert: any) {
   alert({
@@ -91,6 +125,7 @@ type Props = {
     checked: boolean
   ) => void;
   sendAnalytics: boolean;
+  deleteAllSamples: () => void;
 };
 
 const MenuMain: FC<Props> = ({
@@ -99,9 +134,13 @@ const MenuMain: FC<Props> = ({
   deleteUser,
   sendAnalytics,
   onToggle,
+  deleteAllSamples,
 }) => {
   const alert = useAlert();
   const showUserDeleteDialog = useUserDeleteDialog(deleteUser);
+
+  const showDeleteAllSamplesDialog =
+    useDeleteAllSamplesDialog(deleteAllSamples);
 
   const showResetDialog = () => resetDialog(resetApp, alert);
 
@@ -124,6 +163,14 @@ const MenuMain: FC<Props> = ({
         </div>
 
         <div className="rounded destructive-item">
+          <IonItem onClick={showDeleteAllSamplesDialog}>
+            <IonIcon icon={trashOutline} size="small" slot="start" />
+            <IonLabel>Remove uploaded records</IonLabel>
+          </IonItem>
+          <InfoMessage color="medium">
+            You can remove uploaded surveys from this device.
+          </InfoMessage>
+
           <IonItem onClick={showResetDialog}>
             <IonIcon icon={arrowUndoOutline} size="small" slot="start" />
             <IonLabel>Reset app</IonLabel>

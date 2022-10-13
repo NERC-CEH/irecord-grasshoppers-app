@@ -14,4 +14,14 @@ savedSamples.uploadAll = async () => {
   console.log('SavedSamples: all records were uploaded!');
 };
 
+export function removeAllSynced() {
+  console.log('SavedSamples: removing all synced samples.');
+
+  const destroy = (sample: Sample) =>
+    !sample.metadata.synced_on ? null : sample.destroy();
+  const toWait = savedSamples.map(destroy);
+
+  return Promise.all(toWait);
+}
+
 export default savedSamples;

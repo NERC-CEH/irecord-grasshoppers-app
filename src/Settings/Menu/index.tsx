@@ -2,6 +2,7 @@ import { FC, useContext } from 'react';
 import { NavContext } from '@ionic/react';
 import { Page, Header, useToast, useLoader, PickByType } from '@flumens';
 import appModel, { Attrs as AppModelAttrs } from 'models/app';
+import { removeAllSynced } from 'models/savedSamples';
 import userModel from 'models/user';
 import { observer } from 'mobx-react';
 import Main from './Main';
@@ -24,6 +25,17 @@ const useResetApp = () => {
 
   return reset;
 };
+
+async function deleteAllSamples(toast: any) {
+  console.log('Settings:Menu:Controller: deleting all samples.');
+
+  try {
+    await removeAllSynced();
+    toast.success('Done');
+  } catch (e: any) {
+    toast.error(`${e.message}`);
+  }
+}
 
 const useDeleteUser = () => {
   const toast = useToast();
@@ -58,6 +70,7 @@ function onToggle(
 }
 
 const MenuController: FC = () => {
+  const toast = useToast();
   const resetApp = useResetApp();
   const deleteUser = useDeleteUser();
 
@@ -65,6 +78,7 @@ const MenuController: FC = () => {
 
   const { sendAnalytics } = appModel.attrs;
 
+  const deleteAllSamplesWrap = () => deleteAllSamples(toast);
   return (
     <Page id="settings">
       <Header title="Settings" />
@@ -74,6 +88,7 @@ const MenuController: FC = () => {
         deleteUser={deleteUser}
         sendAnalytics={sendAnalytics}
         onToggle={onToggle}
+        deleteAllSamples={deleteAllSamplesWrap}
       />
     </Page>
   );

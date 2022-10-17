@@ -2,7 +2,7 @@
 import { FC } from 'react';
 import clsx from 'clsx';
 import { Species } from 'common/data/species';
-import { Gallery } from '@flumens';
+import { Gallery, useOnHideModal } from '@flumens';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '@ionic/react/css/ionic-swiper.css';
@@ -26,6 +26,8 @@ const FullScreenPhotoViewer: FC<Props> = ({
   let initialSlide = 0;
   let className = 'white-background';
   let pageTitle = '';
+
+  useOnHideModal(onClose);
 
   const swiperProps = {};
 

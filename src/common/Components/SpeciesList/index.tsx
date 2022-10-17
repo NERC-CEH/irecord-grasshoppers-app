@@ -120,7 +120,7 @@ const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
           </IonToolbar>
         </IonHeader>
 
-        <SpeciesProfile species={speciesProfile} />
+        <SpeciesProfile species={speciesProfile} onClose={hideSpeciesModal} />
       </IonModal>
     </Main>
   );

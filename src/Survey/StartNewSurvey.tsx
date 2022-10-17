@@ -2,7 +2,7 @@ import { useEffect, useContext } from 'react';
 import { useRouteMatch } from 'react-router';
 import { NavContext } from '@ionic/react';
 import Sample from 'models/sample';
-import { useAlert } from '@flumens';
+import { useAlert, useDisableBackButton } from '@flumens';
 import appModel, { SurveyDraftKeys } from 'models/app';
 import savedSamples from 'models/savedSamples';
 import surveyConfig from './config';
@@ -71,6 +71,8 @@ function StartNewSurvey({ survey }: any) {
   const match = useRouteMatch();
   const { navigate } = useContext(NavContext);
   const alert = useAlert();
+
+  useDisableBackButton();
 
   const draftIdKey = `draftId:${survey.name}` as keyof SurveyDraftKeys;
 

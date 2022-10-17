@@ -47,6 +47,11 @@ export { default as ModelLocation } from '@flumens/ionic/dist/components/ModelLo
 export { default as DateTimeInput } from '@flumens/ionic/dist/components/DatetimeInput';
 export { default as date } from '@flumens/ionic/dist/utils/date';
 export { default as InfoBackgroundMessage } from '@flumens/ionic/dist/components/InfoBackgroundMessage';
+export {
+  useDisableBackButton,
+  useOnBackButton,
+  useOnHideModal,
+} from '@flumens/ionic/dist/hooks/navigation';
 export * from '@flumens/ionic/dist/utils/type';
 export * from '@flumens/ionic/dist/utils/validation';
 export * from '@flumens/ionic/dist/utils/location';

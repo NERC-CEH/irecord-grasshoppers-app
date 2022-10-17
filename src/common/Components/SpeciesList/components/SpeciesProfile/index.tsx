@@ -11,18 +11,21 @@ import { Pagination } from 'swiper';
 import { Trans as T } from 'react-i18next';
 import { expandOutline, volumeHighOutline } from 'ionicons/icons';
 import { Species } from 'common/data/species';
-import { Main } from '@flumens';
+import { Main, useOnBackButton } from '@flumens';
 import ImageWithBackground from 'common/Components/ImageWithBackground';
 import FullScreenPhotoViewer from '../FullScreenPhotoViewer';
 import './styles.scss';
 
 type Props = {
   species?: Species;
+  onClose: () => void;
 };
 
-const SpeciesProfile: FC<Props> = ({ species }) => {
+const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
   const [showGallery, setShowGallery] = useState<number>();
   const [showMap, setShowMap] = useState(false);
+
+  useOnBackButton(onClose);
 
   const showPhotoInFullScreen = (index: number) => setShowGallery(index);
 

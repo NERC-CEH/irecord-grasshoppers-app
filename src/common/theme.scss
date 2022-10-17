@@ -258,11 +258,17 @@ ion-item-divider {
   }
 }
 
-.date-input-attr ion-label[slot='end'] {
-  font-size: 1em;
+.date-input-attr {
+  ion-label[slot='end'] {
+    font-size: 1em;
+  }
 
   &.ios {
     font-size: 0.9em;
+  }
+
+  ion-item.md {
+    --border-width: 0 0 1px 0 !important;
   }
 }
 

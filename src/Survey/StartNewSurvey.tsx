@@ -24,6 +24,7 @@ async function showDraftAlert(alert: any) {
         },
         {
           text: 'Continue',
+          cssClass: 'primary',
           handler: () => {
             resolve(true);
           },

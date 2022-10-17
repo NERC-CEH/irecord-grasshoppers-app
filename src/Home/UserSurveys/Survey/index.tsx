@@ -38,6 +38,7 @@ function useSurveyDeletePrompt(sample: Sample) {
         {
           text: 'Cancel',
           role: 'cancel',
+          cssClass: 'primary',
         },
         {
           text: 'Delete',

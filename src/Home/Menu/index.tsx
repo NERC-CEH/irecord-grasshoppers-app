@@ -25,7 +25,7 @@ function showLogoutConfirmationDialog(callback: any, alert: any) {
       {
         text: 'Cancel',
         role: 'cancel',
-        cssClass: 'secondary',
+        cssClass: 'primary',
       },
       {
         text: 'Logout',

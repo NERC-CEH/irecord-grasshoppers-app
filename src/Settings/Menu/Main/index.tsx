@@ -36,10 +36,7 @@ function useDeleteAllSamplesDialog(deleteAllSamples: any) {
         </>
       ),
       buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-        },
+        { text: 'Cancel', role: 'cancel', cssClass: 'primary' },
         {
           text: 'Remove',
           role: 'destructive',
@@ -68,7 +65,7 @@ function resetDialog(resetApp: any, alert: any) {
       </>
     ),
     buttons: [
-      { text: 'Cancel', role: 'cancel', cssClass: 'secondary' },
+      { text: 'Cancel', role: 'cancel', cssClass: 'primary' },
       {
         text: 'Reset',
         role: 'destructive',
@@ -103,6 +100,7 @@ function useUserDeleteDialog(deleteUser: any) {
         {
           text: 'Cancel',
           role: 'cancel',
+          cssClass: 'primary',
         },
         {
           text: 'Delete',

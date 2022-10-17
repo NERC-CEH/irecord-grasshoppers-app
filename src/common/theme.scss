@@ -71,6 +71,8 @@
   --ion-page-background: #f5f7f5;
 
   --theme-border-radius: 10px;
+
+  --primary-alert-role-color: #0b7c0b;
 }
 
 // status bar
@@ -281,4 +283,8 @@ ion-radio-group .item-radio-checked:not(.radio-input-default-option) {
 ion-button[type='submit'],
 ion-button[expand='block'] {
   max-height: 40px;
+}
+
+.alert-wrapper .alert-button-group button.primary {
+  color: var(--primary-alert-role-color);
 }

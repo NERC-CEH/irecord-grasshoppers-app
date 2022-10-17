@@ -110,14 +110,14 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
         <IonCardContent>
           {species.ukStatus && (
             <>
-              <h3>UK Status: </h3>
+              <h3>UK Status</h3>
               <p>{species.ukStatus}</p>
             </>
           )}
 
           {species.description && (
             <>
-              <h3>Description: </h3>
+              <h3>Description</h3>
               <p>
                 <T>{species.description}</T>
               </p>
@@ -126,14 +126,14 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
 
           {species.size && (
             <>
-              <h3>Size: </h3>
+              <h3>Size</h3>
               <p>{species.size}</p>
             </>
           )}
 
           {species.whenToSee && (
             <>
-              <h3>When to see: </h3>
+              <h3>When to see</h3>
               <p>
                 <T>{species.whenToSee}</T>
               </p>
@@ -142,21 +142,21 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
 
           {species.whatItEats && (
             <>
-              <h3>What it eats: </h3>
+              <h3>What it eats</h3>
               <p>{species.whatItEats}</p>
             </>
           )}
 
           {species.sounds && (
             <>
-              <h3>Sounds: </h3>
+              <h3>Sounds</h3>
               <p>{species.sounds}</p>
             </>
           )}
 
           {species.sound && (
             <>
-              <h3>Sound: </h3>
+              <h3>Sound</h3>
               <IonButton onClick={playSound}>
                 <IonIcon icon={volumeHighOutline} />
               </IonButton>
@@ -165,7 +165,7 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
 
           {species.sonogram && (
             <>
-              <h3>Sonogram: </h3>
+              <h3>Sonogram</h3>
               <IonImg src={species.sonogram} />
             </>
           )}
@@ -181,14 +181,14 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
 
           {species.map && (
             <>
-              <h3>Distribution:</h3>
+              <h3>Distribution</h3>
               {getMap()}
             </>
           )}
 
           {species.similarSpecies && (
             <>
-              <h3>Similar species: </h3>
+              <h3>Similar species</h3>
               <p>{species.similarSpecies}</p>
             </>
           )}

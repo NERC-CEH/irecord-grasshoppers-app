@@ -1,14 +1,14 @@
 @import '@flumens/ionic/dist/themes/rounded.css';
 
 :root {
-  --ion-color-primary: #ff771c;
-  --ion-color-primary-rgb: 255, 117, 26;
-  --ion-color-primary-contrast: #fff;
+  --ion-color-primary: #7c2366;
+  --ion-color-primary-rgb: 124, 35, 102;
+  --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #c54f00;
-  --ion-color-primary-tint: #f59556;
+  --ion-color-primary-shade: #6d1f5a;
+  --ion-color-primary-tint: #893975;
 
-  --ion-color-secondary: #ffa514;
+  --ion-color-secondary: #9a6612;
   --ion-color-secondary-rgb: 0, 142, 236;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -29,12 +29,12 @@
   --ion-color-success-shade: #00a617;
   --ion-color-success-tint: #1ac431;
 
-  --ion-color-warning: #e0b500;
-  --ion-color-warning-rgb: 255, 206, 0;
-  --ion-color-warning-contrast: #ffffff;
-  --ion-color-warning-contrast-rgb: 255, 255, 255;
-  --ion-color-warning-shade: #c7a100;
-  --ion-color-warning-tint: #ffd31a;
+  --ion-color-warning: #cea81e;
+  --ion-color-warning-rgb: 206, 168, 30;
+  --ion-color-warning-contrast: #fff;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #b5941a;
+  --ion-color-warning-tint: #d3b135;
 
   --ion-color-danger: #f04141;
   --ion-color-danger-rgb: 245, 61, 61;

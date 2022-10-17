@@ -45,7 +45,7 @@ const RegisterContainer: FC = () => {
       alert({
         header: 'Welcome aboard',
         message:
-          'Before starting any surveys please check your email and click on the verification link.',
+          'Before starting any records please check your email and click on the verification link.',
         buttons: [
           {
             text: 'OK, got it',

@@ -17,7 +17,9 @@ import {
   layersOutline,
 } from 'ionicons/icons';
 import grasshopperIcon from 'common/images/grasshopper.svg';
+import PendingSurveysBadge from 'Components/PendingSurveysBadge';
 import { observer } from 'mobx-react';
+import savedSamples from 'models/savedSamples'
 import Info from './Info';
 import Species from './Species';
 import UserSurveys from './UserSurveys';
@@ -53,6 +55,7 @@ const HomeController: FC = () => {
         <IonTabButton tab="/home/user-surveys" href="/home/user-surveys">
           <IonIcon icon={layersOutline} />
           <IonLabel>Records</IonLabel>
+          <PendingSurveysBadge savedSamples={savedSamples} />
         </IonTabButton>
 
         <IonTabButton>

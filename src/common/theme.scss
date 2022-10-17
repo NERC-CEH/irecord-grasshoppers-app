@@ -69,6 +69,8 @@
   --custom-color-complex-survey-tint: #b98b14;
 
   --ion-page-background: #f5f7f5;
+
+  --theme-border-radius: 10px;
 }
 
 // status bar
@@ -118,6 +120,16 @@ ion-textarea {
   }
 }
 
+// status bar
+html.ios.plt-hybrid #status-bar-background {
+  background: transparent;
+  width: 100vw;
+  height: env(safe-area-inset-top);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
 // FONTS START
 @font-face {
   font-family: 'Quicksand';
@@ -129,7 +141,10 @@ ion-textarea {
   src: url('./fonts/Quicksand-Bold.ttf');
 }
 
-ion-title,
+ion-title {
+  font-family: 'Quicksand Bold' !important;
+}
+
 h1 {
   color: var(--ion-color-primary);
   font-family: 'Quicksand Bold' !important;
@@ -160,4 +175,110 @@ ion-label,
 ion-chip,
 ion-item {
   font-family: 'Quicksand' !important;
+}
+// FONTS END
+
+.apps-section .apps-section-h,
+h1,
+h2,
+h3 {
+  color: var(--ion-color-primary);
+}
+
+// info messages
+.attr-page .info-message,
+.info-message.blue {
+  --background: rgba(var(--ion-color-secondary-rgb), 0.1);
+  background: white; // above is transparent
+  border: 1px solid #dcedff;
+  border-radius: var(--theme-border-radius);
+
+  ion-note {
+    color: var(--ion-color-secondary-dark);
+    font-size: 1em;
+  }
+
+  ion-icon {
+    color: var(--ion-color-secondary-dark) !important;
+  }
+
+  ion-button {
+    color: var(--ion-color-secondary-dark) !important;
+    --border-color: var(--ion-color-secondary-dark) !important;
+  }
+}
+
+ion-list .info-message {
+  --background: #fafafa;
+}
+
+// accessibility improvements
+ion-button:not(.button-has-icon-only),
+ion-item {
+  font-size: 1em;
+  &.md {
+    font-size: 0.9em;
+  }
+}
+
+#img-array .empty {
+  font-size: 0.9em !important;
+}
+
+ion-item-divider {
+  font-size: 0.9em;
+  color: var(--ion-text-color);
+  padding: 0 5px 7px 5px;
+}
+
+.attr-page ion-item-divider ion-label {
+  font-family: 'Quicksand Bold' !important;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.collapse-block ion-label.ion-text-wrap {
+  font-size: 0.9em;
+}
+
+.radio-input-attr ion-item ion-label {
+  font-size: 0.9em !important;
+}
+
+.menu-attr-item,
+.attr-wrapper {
+  ion-icon[slot='start'] {
+    --ionicon-stroke-width: 24px;
+  }
+  ion-label[slot='end'] {
+    opacity: 0.8 !important;
+    font-size: 0.9em;
+  }
+}
+
+.date-input-attr ion-label[slot='end'] {
+  font-size: 1em;
+
+  &.ios {
+    font-size: 0.9em;
+  }
+}
+
+.counter-input-attr-item ion-button,
+.counter-input-attr-item input {
+  opacity: 0.8 !important;
+}
+
+.menu-attr-item.required.empty > ion-icon:first-of-type {
+  color: black;
+}
+
+ion-radio-group .item-radio-checked:not(.radio-input-default-option) {
+  border: 1px #dce0d5 solid;
+  border-radius: 10px;
+}
+
+ion-button[type='submit'],
+ion-button[expand='block'] {
+  max-height: 40px;
 }

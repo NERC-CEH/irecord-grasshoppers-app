@@ -79,9 +79,9 @@
         position: absolute;
         right: 0;
         top: 0;
-        height: 70%;
+        height: 60%;
         width: 70%;
-        background: #fffffff0;
+        background: #698e1fc9;
         border-radius: 50%;
         transform: translate(50%, -50%);
         box-shadow: 0 0 15px 5px #e6e6e6;
@@ -90,10 +90,11 @@
         ion-icon {
           width: 30%;
           height: 50%;
-          --ionicon-stroke-width: 20;
+          --ionicon-stroke-width: 30;
           position: absolute;
           bottom: 4%;
           left: 16%;
+          color: var(--ion-color-primary-contrast);
         }
       }
     }

@@ -23,4 +23,11 @@ export default class AppOccurrence extends Occurrence {
 
   // eslint-disable-next-line
   isDisabled = () => this.isUploaded();
+
+  getPrettyName() {
+    const species = this.attrs.taxon || {};
+    const { scientificName, commonName } = species;
+
+    return commonName || scientificName;
+  }
 }

@@ -168,7 +168,7 @@ const MenuMain: FC<Props> = ({
             <IonLabel>Remove uploaded records</IonLabel>
           </IonItem>
           <InfoMessage color="medium">
-            You can remove uploaded surveys from this device.
+            You can remove uploaded records from this device.
           </InfoMessage>
 
           <IonItem onClick={showResetDialog}>

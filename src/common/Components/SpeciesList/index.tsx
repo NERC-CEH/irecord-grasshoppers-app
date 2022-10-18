@@ -29,11 +29,25 @@ type Props = {
 const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
   const isSurvey = !!onSpeciesClick;
 
-  const [speciesProfile, setSpeciesProfile] = useState<Species | undefined>(
-    undefined
-  );
+  const [speciesProfile, setSpeciesProfile] = useState<Species>();
+
+  const [audio, setAudio] = useState<HTMLAudioElement>();
 
   const hideSpeciesModal = () => setSpeciesProfile(undefined);
+
+  const playSound = (e: SyntheticEvent, sp?: Species) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
+    const sound = new Audio(sp?.sound);
+    sound.play();
+    setAudio(sound);
+  };
 
   const speciesTile = (sp: Species) => {
     const { thumbnail: thumbnailSrc, commonName, id, backgroundThumbnail } = sp;
@@ -48,14 +62,6 @@ const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
 
     const onClick = isSurvey ? selectSpecies : viewSpecies;
 
-    const playSound = (e: SyntheticEvent) => {
-      e.preventDefault();
-      e.stopPropagation();
-
-      const sound = new Audio(sp.sound);
-      sound.play();
-    };
-
     const infoBox = () => {
       if (isSurvey) {
         return (
@@ -67,8 +73,9 @@ const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
 
       if (!sp.sound) return null;
 
+      const playSoundWrap = (e: SyntheticEvent) => playSound(e, sp);
       return (
-        <div className="info-box" onClick={playSound}>
+        <div className="info-box" onClick={playSoundWrap}>
           <IonIcon icon={volumeHighOutline} />
         </div>
       );
@@ -120,7 +127,11 @@ const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
           </IonToolbar>
         </IonHeader>
 
-        <SpeciesProfile species={speciesProfile} onClose={hideSpeciesModal} />
+        <SpeciesProfile
+          species={speciesProfile}
+          onClose={hideSpeciesModal}
+          playSound={playSound}
+        />
       </IonModal>
     </Main>
   );

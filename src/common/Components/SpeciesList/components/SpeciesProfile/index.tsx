@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useState, SyntheticEvent } from 'react';
 import {
   IonCardHeader,
   IonIcon,
@@ -19,9 +19,10 @@ import './styles.scss';
 type Props = {
   species?: Species;
   onClose: () => void;
+  playSound: (e: SyntheticEvent, species?: Species) => void;
 };
 
-const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
+const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
   const [showGallery, setShowGallery] = useState<number>();
   const [showMap, setShowMap] = useState(false);
 
@@ -30,6 +31,8 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
   const showPhotoInFullScreen = (index: number) => setShowGallery(index);
 
   const showMapInFullScreen = () => setShowMap(true);
+
+  const playSoundWrap = (e: SyntheticEvent) => playSound(e, species);
 
   const getSlides = () => {
     const { images } = species || {};
@@ -81,11 +84,6 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
   const onGalleryClose = () => {
     setShowGallery(undefined);
     setShowMap(false);
-  };
-
-  const playSound = () => {
-    const sound = new Audio(species.sound);
-    sound.play();
   };
 
   return (
@@ -157,7 +155,7 @@ const SpeciesProfile: FC<Props> = ({ species, onClose }) => {
           {species.sound && (
             <>
               <h3>Sound</h3>
-              <IonButton onClick={playSound}>
+              <IonButton onClick={playSoundWrap}>
                 <IonIcon icon={volumeHighOutline} />
               </IonButton>
             </>

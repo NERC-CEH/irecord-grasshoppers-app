@@ -111,7 +111,7 @@ ion-textarea {
     min-width: calc(100% - 58.8px);
     text-overflow: ellipsis;
     color: var(--ion-color-primary-contrast);
-    font-size: 1.3em;
+    font-size: 1em !important;
     background: var(--ion-color-primary);
   }
 }

@@ -124,8 +124,11 @@ const MainComponent: FC<Props> = ({ sample, isDisabled }) => {
         )}
 
         <div className="rounded">
-          {getSpeciesButton()}
           <PhotoPicker model={occ} />
+        </div>
+
+        <div className="rounded">
+          {getSpeciesButton()}
 
           {getLocationButton()}
 

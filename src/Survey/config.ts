@@ -3,6 +3,7 @@ import AppOccurrence from 'models/occurrence';
 import { chatboxOutline, calendarOutline } from 'ionicons/icons';
 import numberIcon from 'common/images/number.svg';
 import habitatIcon from 'common/images/habitats.svg';
+import ageIcon from 'common/images/age.svg';
 import { date as dateHelp } from '@flumens';
 import CONFIG from 'common/config';
 import Sample from 'models/sample';
@@ -166,7 +167,7 @@ const survey = {
 
       age: {
         menuProps: {
-          icon: numberIcon,
+          icon: ageIcon,
         },
         pageProps: {
           attrProps: {

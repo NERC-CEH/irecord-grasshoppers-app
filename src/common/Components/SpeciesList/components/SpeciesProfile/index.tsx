@@ -152,19 +152,16 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
             </>
           )}
 
-          {species.sound && (
-            <>
-              <h3>Sound</h3>
-              <IonButton onClick={playSoundWrap}>
-                <IonIcon icon={volumeHighOutline} />
-              </IonButton>
-            </>
-          )}
-
           {species.sonogram && (
             <>
-              <h3>Sonogram</h3>
-              <IonImg src={species.sonogram} />
+              <h3>Sonogram and Sound</h3>
+              <div className="sound">
+                <IonImg src={species.sonogram} />
+
+                <IonButton onClick={playSoundWrap}>
+                  <IonIcon icon={volumeHighOutline} />
+                </IonButton>
+              </div>
             </>
           )}
 

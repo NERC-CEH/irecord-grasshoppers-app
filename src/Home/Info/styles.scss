@@ -3,21 +3,7 @@
     --padding-top: env(safe-area-inset-top) !important;
   }
 
-  .app-title {
-    margin: 0 auto;
-    width: 90%;
-    font-size: 1.4em;
-    padding-top: 10px;
-    color: black;
-  }
-  .app-title span {
-    color: var(--ion-color-primary);
-    font-weight: bold;
-  }
-  .app-title .subtitle {
-    font-size: 0.7em;
-    text-align: right;
-    letter-spacing: 0;
-    margin-top: 2px;
+  h1 {
+    text-align: center;
   }
 }

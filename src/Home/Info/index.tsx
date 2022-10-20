@@ -8,14 +8,8 @@ const InfoController = () => {
   return (
     <Page id="info">
       <Main className="info">
-        <div className="app-title">
-          <div>
-            <h1>
-              iRecord <span>Grasshoppers</span>
-            </h1>
-            <div className="subtitle">and related insects</div>
-          </div>
-        </div>
+        <h1>Info</h1>
+
         <IonList lines="full">
           <div className="rounded">
             <IonItem routerLink="/info/about" detail>

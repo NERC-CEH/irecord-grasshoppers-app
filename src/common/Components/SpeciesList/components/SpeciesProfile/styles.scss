@@ -111,12 +111,12 @@
         --padding-end: 0;
         --border-radius: 50%;
         margin-left: 15px;
-        --background: #edf4e0 !important;
+        --background: var(--ion-color-primary-fade) !important;
 
         ion-icon {
           font-size: 21px;
           padding: 8px;
-          color: #525644;
+          color: var(--ion-color-primary-shade);
         }
       }
     }
@@ -179,8 +179,5 @@
     ion-button {
       --color: red;
     }
-  }
-  .title {
-    font-family: 'Museo500';
   }
 }

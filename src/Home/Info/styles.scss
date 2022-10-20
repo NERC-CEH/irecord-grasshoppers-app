@@ -6,23 +6,18 @@
   .app-title {
     margin: 0 auto;
     width: 90%;
-  }
-  .app-title h1 {
-    font-size: 1.5em;
-    margin: 0;
+    font-size: 1.4em;
     padding-top: 10px;
     color: black;
-    font-family: 'museo400';
   }
   .app-title span {
-    font-family: 'museo500';
-    color: #7c2366;
+    color: var(--ion-color-primary);
+    font-weight: bold;
   }
   .app-title .subtitle {
-    font-size: 1em;
+    font-size: 0.7em;
     text-align: right;
     letter-spacing: 0;
     margin-top: 2px;
-    font-family: 'museo400';
   }
 }

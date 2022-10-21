@@ -167,9 +167,11 @@ const survey = {
 
       age: {
         menuProps: {
+          label: 'Life age',
           icon: ageIcon,
         },
         pageProps: {
+          headerProps: { title: 'Life age' },
           attrProps: {
             input: 'radio',
             info: 'What age is this individual?',

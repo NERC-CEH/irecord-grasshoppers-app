@@ -104,7 +104,8 @@ const survey = {
       remote: {
         id: 'entered_sref',
         values(location: Location, submission: any) {
-          const { accuracy, source, altitude, altitudeAccuracy } = location;
+          const { accuracy, source, altitude, altitudeAccuracy, name } =
+            location;
 
           // eslint-disable-next-line
           submission.values = { ...submission.values };
@@ -113,6 +114,7 @@ const survey = {
           submission.values['smpAttr:282'] = accuracy; // eslint-disable-line
           submission.values['smpAttr:283'] = altitude; // eslint-disable-line
           submission.values['smpAttr:284'] = altitudeAccuracy; // eslint-disable-line
+          submission.values['location_name'] = name; // eslint-disable-line
 
           const lat = location.latitude;
           const lon = location.longitude;

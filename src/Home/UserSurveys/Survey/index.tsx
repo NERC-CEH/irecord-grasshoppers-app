@@ -124,7 +124,7 @@ const Survey: FC<Props> = ({ sample, style, uploadIsPrimary }) => {
     if (!isValid) return;
 
     sample.upload().catch(toast.error);
-    navigate(`/home/surveys`, 'root');
+    navigate(`/home/user-surveys`, 'root');
   };
 
   return (

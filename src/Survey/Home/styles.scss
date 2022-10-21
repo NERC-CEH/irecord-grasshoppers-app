@@ -1,11 +1,25 @@
 #survey-default-edit {
   ion-header ion-button {
-    --padding-end: 20px;
-    --padding-start: 20px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --border-radius: 10px;
   }
 
   ion-content {
     --padding-top: 10px;
+
+    .survey-info-message {
+      margin: 0px 0 10px 0;
+      --background: #ffffff;
+
+      ion-note {
+        color: #000 !important;
+      }
+
+      ion-button {
+        --border-width: 1.5px;
+      }
+    }
 
     .uploaded-message-website-link {
       margin: 20px 20px 10px;

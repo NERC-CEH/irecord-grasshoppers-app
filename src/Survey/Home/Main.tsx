@@ -111,12 +111,13 @@ const MainComponent: FC<Props> = ({ sample, isDisabled }) => {
     <Main className={clsx(isDisabled && 'disable-top-padding')}>
       <IonList lines="full">
         {isDisabled && (
-          <InfoMessage>
+          <InfoMessage className="survey-info-message">
             This record has been uploaded and can only be edited on our website.
             <IonButton
               expand="block"
               className="uploaded-message-website-link"
               href={`${CONFIG.backend.url}/record-details?occurrence_id=${occ.id}`}
+              fill="outline"
             >
               iRecord website
             </IonButton>

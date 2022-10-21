@@ -7,7 +7,8 @@
   --ion-color-primary-contrast-rgb: 0, 0, 0;
   --ion-color-primary-shade: #692402;
   --ion-color-primary-tint: #cd8663;
-  --ion-color-primary-fade: #f8d2c09f;
+  --ion-color-primary-fade: #ffffffa3;
+  --ion-color-primary-dark: #421702;
 
   --ion-color-secondary: #9a6612;
   --ion-color-secondary-rgb: 0, 142, 236;
@@ -30,12 +31,12 @@
   --ion-color-success-shade: #00a617;
   --ion-color-success-tint: #1ac431;
 
-  --ion-color-warning: #cea81e;
-  --ion-color-warning-rgb: 206, 168, 30;
-  --ion-color-warning-contrast: #fff;
-  --ion-color-warning-contrast-rgb: 0, 0, 0;
-  --ion-color-warning-shade: #b5941a;
-  --ion-color-warning-tint: #d3b135;
+  --ion-color-warning: #9a6612;
+  --ion-color-warning-rgb: 154, 102, 18;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: #885a10;
+  --ion-color-warning-tint: #a4752a;
 
   --ion-color-danger: #f04141;
   --ion-color-danger-rgb: 245, 61, 61;
@@ -103,6 +104,16 @@ ion-textarea {
 
 .slider-input-attr {
   margin-bottom: 15px;
+}
+
+ion-back-button {
+  color: #fff !important;
+}
+
+.location-input-attr {
+  ion-back-button {
+    color: #fff !important;
+  }
 }
 
 .location-name-attr {
@@ -186,6 +197,10 @@ h1,
 h2,
 h3 {
   color: var(--ion-color-primary);
+}
+
+ion-back-button {
+  color: var(--ion-color-dark) !important;
 }
 
 // info messages
@@ -278,10 +293,6 @@ ion-item-divider {
   opacity: 0.8 !important;
 }
 
-.menu-attr-item.required.empty > ion-icon:first-of-type {
-  color: black;
-}
-
 ion-radio-group .item-radio-checked:not(.radio-input-default-option) {
   border: 1px #dce0d5 solid;
   border-radius: 10px;
@@ -294,4 +305,11 @@ ion-button[expand='block'] {
 
 .alert-wrapper .alert-button-group button.primary {
   color: var(--primary-alert-role-color);
+}
+
+.date-input-attr
+  ion-accordion:last-of-type
+  ion-item[slot='header']
+  ion-label[slot='end'] {
+  opacity: 0.8 !important;
 }

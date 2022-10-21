@@ -2,6 +2,7 @@
   ion-tab-bar {
     contain: none;
     padding-bottom: var(--ion-safe-area-bottom, 0);
+    --background: #fffdef;
 
     ion-tab-button {
       max-width: 20vw;

@@ -10,7 +10,7 @@ function Guide() {
         <IonToolbar>
           <IonTitle size="large" className="app-name">
             iRecord <b>Grasshoppers</b>
-            <div className="subtitle">and related insects</div>
+            <div className="subtitle">& related insects</div>
           </IonTitle>
         </IonToolbar>
       </IonHeader>

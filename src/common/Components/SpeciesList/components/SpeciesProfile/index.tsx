@@ -11,6 +11,7 @@ import { Pagination } from 'swiper';
 import { Trans as T } from 'react-i18next';
 import { expandOutline, volumeHighOutline } from 'ionicons/icons';
 import { Species } from 'common/data/species';
+import clsx from 'clsx';
 import { Main, useOnBackButton } from '@flumens';
 import ImageWithBackground from 'common/Components/ImageWithBackground';
 import FullScreenPhotoViewer from '../FullScreenPhotoViewer';
@@ -147,21 +148,20 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
 
           {species.sounds && (
             <>
-              <h3>Sounds</h3>
-              <p>{species.sounds}</p>
-            </>
-          )}
-
-          {species.sonogram && (
-            <>
-              <h3>Sonogram and Sound</h3>
               <div className="sound">
-                <IonImg src={species.sonogram} />
+                <h3>Sound</h3>
 
-                <IonButton onClick={playSoundWrap}>
-                  <IonIcon icon={volumeHighOutline} />
-                </IonButton>
+                {species.sound && (
+                  <IonButton onClick={playSoundWrap}>
+                    <IonIcon icon={volumeHighOutline} />
+                  </IonButton>
+                )}
               </div>
+
+              <p className={clsx(species.sound && 'sound-text')}>
+                {species.sounds}
+              </p>
+              {species.sonogram && <IonImg src={species.sonogram} />}
             </>
           )}
 

@@ -156,6 +156,17 @@ const survey = {
       },
       remote: { id: 486, values: habitatValues },
     },
+
+    device: {
+      id: 273,
+      values: {
+        iOS: 2398,
+        Android: 2399,
+      },
+    },
+
+    deviceVersion: { remote: { id: 759 } },
+    appVersion: { remote: { id: 1139 } },
   },
 
   occ: {

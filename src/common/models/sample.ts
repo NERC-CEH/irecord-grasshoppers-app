@@ -6,6 +6,7 @@ import {
   device,
   useAlert,
 } from '@flumens';
+import { isPlatform } from '@ionic/react';
 import userModel from 'models/user';
 import CONFIG from 'common/config';
 import surveyConfig from 'Survey/config';
@@ -74,6 +75,44 @@ class AppSample extends Sample {
     this.cleanUp();
 
     return this.saveRemote();
+  }
+
+  _attachTopSampleSubmission(updatedSubmission: any) {
+    const isTopSample = !this.parent;
+    if (!isTopSample) {
+      return;
+    }
+
+    const keys = this.keys();
+
+    const platform = isPlatform('android') ? 'Android' : 'iOS';
+
+    const platformId = keys?.device?.values[platform] || null;
+
+    const appAndDeviceFields = {
+      [`smpAttr:${keys.device.id}`]: platformId,
+      [`smpAttr:${keys.deviceVersion.id}`]: device?.info?.osVersion,
+      [`smpAttr:${keys.appVersion.id}`]: CONFIG.version,
+    };
+
+    // eslint-disable-next-line no-param-reassign
+    updatedSubmission.values = {
+      ...updatedSubmission.values,
+      ...appAndDeviceFields,
+    };
+  }
+
+  getSubmission(...args: any) {
+    const submission = super.getSubmission(...args);
+
+    const updatedSubmission = {
+      ...submission,
+      values: { ...submission.values },
+    };
+
+    this._attachTopSampleSubmission(updatedSubmission);
+
+    return updatedSubmission;
   }
 }
 

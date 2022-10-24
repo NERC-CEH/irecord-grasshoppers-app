@@ -23,13 +23,21 @@ const Partners = () => (
         </P>
       </Section>
       <div className="logos">
-        <IonImg src={CEHLogo} />
+        <a href="https://www.ceh.ac.uk/">
+          <IonImg src={CEHLogo} />
+        </a>
 
-        <IonImg src={NERCLogo} />
+        <a href="https://www.ukri.org/">
+          <IonImg src={NERCLogo} />
+        </a>
 
-        <IonImg src={JnccLogo} />
+        <a href="https://www.jncc.gov.uk/">
+          <IonImg src={JnccLogo} />
+        </a>
 
-        <IonImg src={BRCLogo} />
+        <a href="https://www.brc.ac.uk/">
+          <IonImg src={BRCLogo} />
+        </a>
       </div>
     </Main>
   </Page>

@@ -97,6 +97,10 @@
       font-weight: bold;
       color: var(--ion-color-primary-dark);
     }
+    h3:first-of-type {
+      margin-top: 0;
+    }
+
     p {
       padding-left: 3px;
     }

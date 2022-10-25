@@ -3,11 +3,13 @@ import thumbnail from './lessermarsh_thumbnail.png';
 import sound from './lessermarsh_sound.mp3';
 import sonogram from './lessermarsh_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
+import descriptionImg from './lessermarsh_descriptionImg.jpg';
 
 export default {
   thumbnail,
   map,
   backgroundThumbnail,
+  descriptionImg,
   sound,
   sonogram,
 };

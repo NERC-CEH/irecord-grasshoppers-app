@@ -13,14 +13,15 @@ type Props = {
   onClose: () => void;
   showGallery?: number;
   showMap: boolean;
+  showSpeciesDescription: boolean;
 };
 
 const FullScreenPhotoViewer: FC<Props> = ({
   species,
   onClose,
   showGallery,
-
   showMap,
+  showSpeciesDescription,
 }) => {
   let items: any = [];
   let initialSlide = 0;
@@ -46,7 +47,14 @@ const FullScreenPhotoViewer: FC<Props> = ({
     items.push({ src: species.map });
   }
 
-  const isOpen = !!items.length && (Number.isInteger(showGallery) || showMap);
+  if (showSpeciesDescription) {
+    pageTitle = species.commonName;
+    items.push({ src: species.descriptionImg });
+  }
+
+  const isOpen =
+    !!items.length &&
+    (Number.isInteger(showGallery) || showMap || showSpeciesDescription);
 
   return (
     <Gallery

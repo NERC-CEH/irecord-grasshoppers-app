@@ -3,11 +3,13 @@ import thumbnail from './house_thumbnail.png';
 import sound from './house_sound.mp3';
 import sonogram from './house_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
+import descriptionImg from './house_descriptionImg.jpg';
 
 export default {
   thumbnail,
   map,
   backgroundThumbnail,
+  descriptionImg,
   sound,
   sonogram,
 };

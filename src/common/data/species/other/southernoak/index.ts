@@ -3,11 +3,13 @@ import thumbnail from './southernoak_thumbnail.png';
 import sound from './southernoak_sound.mp3';
 import sonogram from './southernoak_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
+import descriptionImg from './southernoak_descriptionImg.jpg';
 
 export default {
   thumbnail,
   map,
   backgroundThumbnail,
+  descriptionImg,
   sound,
   sonogram,
 };

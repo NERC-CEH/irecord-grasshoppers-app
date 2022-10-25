@@ -26,12 +26,15 @@ type Props = {
 const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
   const [showGallery, setShowGallery] = useState<number>();
   const [showMap, setShowMap] = useState(false);
+  const [showSpeciesDescription, setShowSpeciesDescription] = useState(false);
 
   useOnBackButton(onClose);
 
   const showPhotoInFullScreen = (index: number) => setShowGallery(index);
 
   const showMapInFullScreen = () => setShowMap(true);
+  const showSpeciesDescriptionInFullScreen = () =>
+    setShowSpeciesDescription(true);
 
   const playSoundWrap = (e: SyntheticEvent) => playSound(e, species);
 
@@ -85,6 +88,7 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
   const onGalleryClose = () => {
     setShowGallery(undefined);
     setShowMap(false);
+    setShowSpeciesDescription(false);
   };
 
   return (
@@ -94,6 +98,7 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
         onClose={onGalleryClose}
         showGallery={showGallery}
         showMap={showMap}
+        showSpeciesDescription={showSpeciesDescription}
       />
 
       <Main id="species-profile">
@@ -120,6 +125,19 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
               <p>
                 <T>{species.description}</T>
               </p>
+
+              <div
+                className="fullscreen-tappable map"
+                onClick={showSpeciesDescriptionInFullScreen}
+              >
+                <IonImg
+                  src={species.descriptionImg}
+                  className="species-description-image"
+                />
+                <div className="fullscreen-btn">
+                  <IonIcon src={expandOutline} slot="end" color="warning" />
+                </div>
+              </div>
             </>
           )}
 

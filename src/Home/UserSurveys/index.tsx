@@ -33,6 +33,7 @@ const LIST_ITEM_DIVIDER_HEIGHT = 38;
 function byCreateTime(sample1: Sample, sample2: Sample) {
   const date1 = new Date(sample1.attrs.date);
   const date2 = new Date(sample2.attrs.date);
+
   return date2.getTime() - date1.getTime();
 }
 

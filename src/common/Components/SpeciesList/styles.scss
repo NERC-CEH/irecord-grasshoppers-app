@@ -92,6 +92,18 @@
           left: 16%;
           color: var(--ion-color-primary-shade);
         }
+
+        img {
+          width: 30%;
+          height: 50%;
+          --ionicon-stroke-width: 30;
+          position: absolute;
+          bottom: 4%;
+          left: 16%;
+        }
+      }
+      .info-box.active {
+        background: var(--ion-color-primary-light) !important;
       }
     }
   }

@@ -20,7 +20,7 @@ import './styles.scss';
 type Props = {
   species?: Species;
   onClose: () => void;
-  playSound: (e: SyntheticEvent, species?: Species) => void;
+  playSound: (e: SyntheticEvent, species: Species) => void;
 };
 
 const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
@@ -29,6 +29,8 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
   const [showSpeciesDescription, setShowSpeciesDescription] = useState(false);
 
   useOnBackButton(onClose);
+
+  if (!species) return null;
 
   const showPhotoInFullScreen = (index: number) => setShowGallery(index);
 

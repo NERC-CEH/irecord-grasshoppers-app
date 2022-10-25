@@ -1,4 +1,4 @@
-import { FC, useContext } from 'react';
+import { FC, useContext, useEffect } from 'react';
 import {
   IonTabs,
   IonTabButton,
@@ -7,8 +7,10 @@ import {
   IonTabBar,
   IonRouterOutlet,
   NavContext,
+  useIonRouter,
 } from '@ionic/react';
 import { Redirect, Route } from 'react-router';
+import { App as AppPlugin } from '@capacitor/app';
 import { LongPressFabButton } from '@flumens';
 import {
   informationCircleOutline,
@@ -19,7 +21,7 @@ import {
 import grasshopperIcon from 'common/images/grasshopper.svg';
 import PendingSurveysBadge from 'Components/PendingSurveysBadge';
 import { observer } from 'mobx-react';
-import savedSamples from 'models/savedSamples'
+import savedSamples from 'models/savedSamples';
 import Info from './Info';
 import Species from './Species';
 import UserSurveys from './UserSurveys';
@@ -33,8 +35,24 @@ const LabelComponent = (
   </div>
 );
 const HomeController: FC = () => {
+  const ionRouter = useIonRouter();
+
   const { navigate } = useContext(NavContext);
   const navigateToPrimarySurvey = () => navigate(`/survey/default`);
+
+  const exitApp = () => {
+    const onExitApp = () => !ionRouter.canGoBack() && AppPlugin.exitApp();
+
+    // eslint-disable-next-line @getify/proper-arrows/name
+    document.addEventListener('ionBackButton', (ev: any) =>
+      ev.detail.register(-1, onExitApp)
+    );
+
+    const removeEventListener = () =>
+      document.addEventListener('ionBackButton', onExitApp);
+    return removeEventListener;
+  };
+  useEffect(exitApp, []);
 
   return (
     <IonTabs>

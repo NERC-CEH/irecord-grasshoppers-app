@@ -87,7 +87,7 @@ class AppSample extends Sample {
 
     const platform = isPlatform('android') ? 'Android' : 'iOS';
 
-    const platformId = keys?.device?.values[platform] || null;
+    const platformId = (keys?.device?.values as any)[platform];
 
     const appAndDeviceFields = {
       [`smpAttr:${keys.device.id}`]: platformId,

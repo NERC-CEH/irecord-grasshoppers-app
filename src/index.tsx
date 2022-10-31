@@ -38,6 +38,10 @@ async function init() {
       environment: config.environment,
       build: config.build,
       release: config.version,
+      userId: userModel.id,
+      tags: {
+        'app.appSession': appModel.attrs.appSession,
+      },
     });
 
   appModel.attrs.appSession += 1;

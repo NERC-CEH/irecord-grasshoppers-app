@@ -314,3 +314,7 @@ ion-button[expand='block'] {
   ion-label[slot='end'] {
   opacity: 0.8 !important;
 }
+
+#location-page-header ion-toolbar.location-input-attr:not(:only-of-type) {
+  border-bottom: transparent !important;
+}

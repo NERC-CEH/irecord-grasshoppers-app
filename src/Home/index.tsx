@@ -80,6 +80,7 @@ const HomeController: FC = () => {
           <LongPressFabButton
             onClick={navigateToPrimarySurvey}
             label={LabelComponent}
+            onLongClick={() => null}
           >
             <div />
           </LongPressFabButton>

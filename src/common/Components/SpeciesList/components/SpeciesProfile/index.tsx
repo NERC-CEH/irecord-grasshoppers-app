@@ -156,12 +156,14 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
             </>
           )}
 
-          {species.whenToSee && (
+          {(species.whenToSee || species.lifecycle) && (
             <>
               <h3>When to see</h3>
-              <p>
-                <T>{species.whenToSee}</T>
-              </p>
+              {species.whenToSee && (
+                <p>
+                  <T>{species.whenToSee}</T>
+                </p>
+              )}
 
               {species.lifecycle && (
                 <div

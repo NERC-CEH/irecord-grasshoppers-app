@@ -4,6 +4,7 @@ import sound from './oakbush_sound.mp3';
 import sonogram from './oakbush_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './oakbush_descriptionImg.jpg';
+import lifecycle from './oakbush_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

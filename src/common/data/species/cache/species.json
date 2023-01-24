@@ -25,13 +25,8 @@
     "sounds": "Short, brisk chirp repeated at short intervals",
     "whereToSee": "Short vegetation in dry, sunny situations; downland and coastal grassland. Eggs are laid into the soil. Found throughout the UK but not often recorded in Scotland.",
     "whenToSee": "Long season with nymphs hatching from late March. <br /><br />Adults appear from June and may survive until early December.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Common Green Grasshopper, Stripe-winged Grasshopper, Heath Grasshopper"
   },
   {
@@ -59,14 +54,8 @@
     "sounds": "Buzzing with a rapid irregular pulse, repeated at varying intervals; similar to Heath Grasshopper but longer and quieter, lasting 3-5 seconds.",
     "whereToSee": "Coarse grasses in a wide range of habitats such as sand dunes, saltmarshes, woodland rides, roadside verges, waste ground, valley wetlands and wet grassy moorland. <br /><br />The eggs are laid just below the soil surface. Found throughout the UK.",
     "whenToSee": "Long season with nymphs hatching in April. <br /><br />Adults appear by June and remain abundant through to September, some may survive into November.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "short",
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["short", "long"],
     "similarSpecies": "Lesser Marsh Grasshopper, Large Marsh Grasshopper"
   },
   {
@@ -95,12 +84,8 @@
     "sounds": "Brief, penetrating chip, performed throughout the day and into the night.",
     "whereToSee": "Wasteland, bramble thickets, old hedges, woodland edges and rides, thickets on sea cliffs and scrub on the edges of saltmarshes and dunes. Eggs are laid into rotting wood or bark crevices. <br /><br />Most records are from the southern counties of England but found recorded as far north as Dumfries and Galloway.",
     "whenToSee": "Nymphs appear at the end of April. <br /><br />Adults appear in late June to early July and survive until winter.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short"],
     "similarSpecies": "Grey Bush-cricket, Bog Bush-cricket, Roesel's Bush-cricket"
   },
   {
@@ -128,13 +113,8 @@
     "sounds": "Penetrating and continuous high pitched buzzing like the crackle of overhead electricity cables",
     "whereToSee": "Originally restricted to saltmarshes and coarse vegetation on dunes in the South-East, but has been rapidly expanding its range west and north to urban wasteland, road verges and agricultural set-aside.",
     "whenToSee": "Nymphs emerge in late May and June. Adults present from late July until autumn.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short",
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short", "long"],
     "similarSpecies": "Bog Bush-cricket, Grey Bush-cricket, Dark Bush-cricket"
   },
   {
@@ -163,12 +143,8 @@
     "sounds": "The song is an almost inaudible chirp repeated at intervals, best picked up with a bat detector.",
     "whereToSee": "Open woodland, scrub, gardens and hedgerows. Eggs are laid in the bark of trees or shrubs. <br /><br />Predominantly a southern species in the UK. Few records north of the Humber.",
     "whenToSee": "Adults present from late July or early August until November.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["short"],
     "similarSpecies": "Southern Oak Bush-cricket, Short-winged Conehead, OakBush-cricket, Great Green Bush-cricket"
   },
   {
@@ -196,13 +172,8 @@
     "sounds": "Rapid, prolonged, sibilant clicking which starts quietly and rapidly increases in volume and is sustained for 10 to 20 seconds or longer",
     "whereToSee": "Long grass often in damp situations and particularly old, unimproved grasslands which are not heavily grazed or mown. <br /><br />Found across Britain and Ireland.",
     "whenToSee": "The first of the grasshoppers to appear in numbers, nymphs can be found from late April or May. Adults appear from July and survive into November.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Field Grasshopper, Stripe-winged Grasshopper, Woodland Grasshopper"
   },
   {
@@ -229,12 +200,8 @@
     "sounds": "A prolonged rapid chuffing noise inaudible to many. Louder than the song of the Short-winged Conehead, and usually NOT alternating with a second, ticking noise.",
     "whereToSee": "Coarse vegetation in ungrazed downland, urban wasteland, coastal reedbeds, dry heaths and bogs. <br /><br />Females bite a hole in hollow stems of grass, reed or rush, and then insert an egg with their ovipositor.",
     "whenToSee": "Nymphs emerge in late May and June. <br /><br />Adults present from August until early winter.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["long"],
     "similarSpecies": "Short-winged Conehead, Great Green Bush-cricket"
   },
   {
@@ -261,13 +228,8 @@
     "sounds": "Gentle burr repeated in cycles 2-6 times. Courtship stridulation sounds like a clock being wound.",
     "whereToSee": "Landward side of sand dunes, also saltmarshes and shingle banks, low lying pastures and on the grassy slopes of dykes. <br /><br />Inland it is found on a wide range of rough grassy areas, often with sedges and grassy embankments. The species also occurs on roadside verges, waste ground, urban parkland, set-aside arable land, and in damp clearings in woods. <br /><br />Eggs are laid adjacent to grass stems on the surface of the soil. <br /><br />A southern species with most records occuring in the east.",
     "whenToSee": "Mid season species with nymphs hatching in May. <br /><br />Adults appear from early to mid July and remain abundant through to October.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Meadow Grasshopper"
   },
   {
@@ -295,12 +257,8 @@
     "sounds": "Does not stridulate but drums one hind leg on a leaf, in short fast bursts",
     "whereToSee": "Arboreal – woods, hedges and gardens. Eggs are laid in crevices in bark or under mosses or lichens. <br /><br />A southern species. Not found north of Cumbria.",
     "whenToSee": "Adults present from late July until autumn.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["long"],
     "similarSpecies": "Southern Oak Bush-cricket, SpeckledBush-cricket, Great Green Bush-cricket"
   },
   {
@@ -327,12 +285,8 @@
     "sounds": "None",
     "whereToSee": "Bare mud and short vegetation in damp, unshaded locations. Particularly associated with base-rich or calcareous soils (dune slacks, limestone sea cliffs and floodplains and fens where the ground water is alkaline). <br /><br />Eggs are laid directly into the ground or in low vegetation. <br /><br />South of Cumbria and central Ireland.",
     "whenToSee": "Late instar nymphs and immature adults overwinter and mature in spring. Nymphs appear from May to July; adults appear by August.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Cepero's Groundhopper, Common Groundhopper"
   },
   {
@@ -360,12 +314,8 @@
     "sounds": "None",
     "whereToSee": "Open habitat with bare ground and short vegetation but unlike T. subulata and T. ceperoi it occurs in both wet and dry locations. Presence of moss is important. <br /><br />Found throughout Britain and Ireland.",
     "whenToSee": "Late instar nymphs and immature adults overwinter and mature in spring. Nymphs appear from May to July. Adults may be found at any time of the year.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Slender Groundhopper, Cepero's Groundhopper"
   },
   {
@@ -394,13 +344,8 @@
     "sounds": "TWO alternating sounds are characteristic: a chuffing noise similar to Long-winged Conehead but even quieter, and a rapid ticking noise, described as sounding like a fishing reel, or the old knife grinders wheel.",
     "whereToSee": "Two distinct habitats: coastally on saltmarshes and sand dunes, particularly associated with maritime rushes and grasses; inland on lowland bogs, fens, reedbeds, river floodplains and by lakes and pools. <br /><br />A southern species. Not found north of Cumbria.",
     "whenToSee": "Nymphs emerge in May and June. <br /><br />Adults present from July and August until mid-October.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "short",
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["short", "long"],
     "similarSpecies": "Speckled Bush-cricket, Long-winged Conehead"
   },
   {
@@ -428,13 +373,8 @@
     "sounds": "A sequence of short buzzing sounds lasting 10-15 seconds (begins softly, reaches a climax and then stops abruptly)",
     "whereToSee": "Dry situations exposed to the sun with short turf and bare ground, usually on free draining soils on sand, gravels chalk and other limestone. Typical locations are the steep sides of disused quarries, road and rail cuttings, heaths and coastal dunes. <br /><br />Present on several small, off-shore islands. Widely distributed across the UK.",
     "whenToSee": "Nymphs hatch from end of April to June. <br /><br />Adults appear by mid June through to October.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Field Grasshopper, Rufous Grasshopper, Mottled Grasshopper"
   },
   {
@@ -460,12 +400,8 @@
     "sounds": "Loud and penetrating song that can be heard over a long distance. It is performed from the late afternoon into the night, often from bushes or trees.",
     "whereToSee": "Overgrown hedges, bramble and bracken. Coastal scrub. <br /><br />Eggs are laid in the ground where they overwinter. <br /><br />A southern species. Not recorded far north of a line between Merseyside and Lincolnshire.",
     "whenToSee": "Nymphs emerge in May and June. <br /><br />Adults present from late July until early winter.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["long"],
     "similarSpecies": "Wartbiter, Sickle-bearing Bush-cricket, Long-winged Conehead, Oak Bush-cricket, Specled Bush-cricket"
   },
   {
@@ -489,12 +425,8 @@
     "sounds": "Short, pulsating, metallic rasp – characteristic ‘wheezing’ hiss.",
     "whereToSee": "Grasslands on chalk and limestones, heaths and some dune systems. Southern England and into East Anglia.",
     "whenToSee": "Nymphs appear in May, adults from mid-July onwards surviving until October.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["long"],
     "similarSpecies": "Common Green Grasshopper, Field Grasshopper"
   },
   {
@@ -520,12 +452,8 @@
     "sounds": "Does not stridulate but drums one hind leg on a leaf, in short fast bursts.",
     "whereToSee": "Arboreal – parks, gardens and broadleaved woodland. Predominantly in urban and suburban areas.",
     "whenToSee": "Late - adults present from the middle of August until autumn.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["short"],
     "similarSpecies": "Oak Bush-cricket, Speckled Bush-cricket"
   },
   {
@@ -552,13 +480,8 @@
     "sounds": "Soft but shrill buzz like rapidly ticking watch",
     "whereToSee": "Lowland heaths and clearings in damp heathy woodland. Eggs are inserted into vegetation by means of the ovipositor. Widely scattered records throughout England.",
     "whenToSee": "Nymphs hatch in May and June. <br /><br />Adults from July until late autumn.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short",
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short", "long"],
     "similarSpecies": "Roesel’s Bush Cricket, Grey Bush-cricket, Dark Bush-cricket"
   },
   {
@@ -584,12 +507,8 @@
     "sounds": "Soft, rapidly repeated, high pitched chirp",
     "whereToSee": "Coastal species – coarse grass and rough vegetation on sand dunes, shingle banks and south-facing cliffs. Recorded along the coast from North Wales south to Suffolk.",
     "whenToSee": "Nymphs hatch in May. <br /><br />Adults appear in July to autumn.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Dark Bush-cricket, Roesel's Bush-cricket, Bog Bush-cricke"
   },
   {
@@ -613,13 +532,8 @@
     "sounds": "Sibilant clicking, starting quietly and increasing in volume before ending abruptly. Each song lasts 5-10 seconds.",
     "whereToSee": "Rides and clearings in woodland and on grassland or heath near woodland and scrub. Eggs are laid in the soil. <br /><br />Predominantly a southern species in the UK. Few records north of Oxfordshire.",
     "whenToSee": "Nymphs appear from April or May. Adults appear in June and rarely survive beyond mid-October.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Common Green Grasshopper, Field Grasshopper, Stripe-winged Grasshopper"
   },
   {
@@ -644,12 +558,8 @@
     "sounds": "Low purring song that is difficult to hear from a solitary male but can be heard from a chorus of males.",
     "whereToSee": "Deep leaf litter in warm clearings and sunny edges of woods or areas of scrub but can also occur in stone walls, earth banks, and clay sea cliffs near wood or scrub. A southern species with most records from South Devon and around the New Forest in Hmapshire.",
     "whenToSee": "Adults present from June to the end of October.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short"],
     "similarSpecies": "Scaly Cricket"
   },
   {
@@ -674,12 +584,8 @@
     "sounds": "None",
     "whereToSee": "Open, sunny situations. Many records from coastal sites, sand dunes and dune slacks, shingle banks, drainage dykes near saltmarshes and seepages on sea cliffs. Also occurs inland by streams and ponds. Eggs are laid directly into the ground or in low vegetation. Largely southern England and South Wales.",
     "whenToSee": "Late instar nymphs and immature adults overwinter and mature in spring. Nymphs appear from May to July; adults appear by August.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Slender Groundhopper, Common Groundhopper"
   },
   {
@@ -703,13 +609,8 @@
     "sounds": "Soft but urgent buzzing which fluctuates slightly, dying away at the end.",
     "whereToSee": "Rough dry grassland on calcareous soils. Typically on south facing slopes and in sheltered valleys where scrub is present or at the margin of woods. Only recorded in the south of the UK from a line along the Thames to Gloscestershire.",
     "whenToSee": "Nymphs hatch in late May. <br /><br />Adults appear by late July and can survive into December.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Field Grasshopper, Mottled Grasshopper"
   },
   {
@@ -738,12 +639,8 @@
     "sounds": "Regular, shrill chirp.",
     "whereToSee": "Few outdoor records; mostly confined to domestic houses and other premises.",
     "whenToSee": "Lives in artificial conditions and lacks seasonality or diapause (seasonal interruptions to development).",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Jamaican Field Cricket, Tropical House Cricket"
   },
   {
@@ -768,12 +665,8 @@
     "sounds": "None, as the species has no wings.",
     "whereToSee": "Lives at the base of sea cliffs <br /><br />Restricted to eastern half of Chesil beach in Dorset, Branscombe in Devon, and Marloes in Wales.",
     "whenToSee": "Nymphs have been recorded in April, adults from August to October.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short"],
     "similarSpecies": "Wood Cricket"
   },
   {
@@ -798,12 +691,8 @@
     "sounds": "Characteristic popping stridulation made by kicking the wings with the hind legs. 1-3 clicks per second, in verses lasting 5-10 seconds.",
     "whereToSee": "Wetland species, usually in acid bogs and tussocky grass especially purple moor-grass and scrub. The eggs are laid in the base of grass tufts. <br /><br />Southern England and Ireland, formerly East Anglia.",
     "whenToSee": "Nymphs emerge in late spring. Adults appear from late July and survive until early November.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["long"],
     "similarSpecies": "Meadow Grasshopper, but this is not as big and does not have such distinctive hind lg markings"
   },
   {
@@ -828,13 +717,8 @@
     "sounds": "Buzzing with a rapid irregular pulse, repeated at varying intervals; similar to the Meadow Grasshopper but slower and louder, lasting 5-6 seconds.",
     "whereToSee": "Dry heathland, frequently in areas of pure heather without grasses. <br /><br />The eggs are laid just below the surface of the soil. <br /><br />Restricted to dry heathlands in Dorset and Hampshire.",
     "whenToSee": "Short season with nymphs hatching in May. <br /><br />Adults appear by late June and July but only survive until October.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Field Grasshopper, Mottled Grasshopper"
   },
   {
@@ -859,12 +743,8 @@
     "sounds": "Males have a loud song consisting of short chirps repeated several times a second, which is performed in front of their burrows and can be heard up to 100m.",
     "whereToSee": "South facing short turf on sandy or chalk soils with patches of bare ground. <br /><br />Southern England only.",
     "whenToSee": "Late instar nymphs and adults overwinter in distinctive burrows with horizontal entrances. <br /><br />Adults are present from April onwards, they mate and lay eggs from May to July and die by August.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Southern Field Cricket"
   },
   {
@@ -890,12 +770,8 @@
     "sounds": "Male stridulation is a loud continuous purring.",
     "whereToSee": "Burrows into deep, loose damp soil at the edges of wetlands and seepages. <br /><br />Today there is only one possible population in the New Forest.",
     "whenToSee": "Lives underground and only sings for a few days around May.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "other species of Mole Cricket"
   },
   {
@@ -919,12 +795,8 @@
     "sounds": "Fairly loud and distinctive, rapidly repeated clicks that often start slow and get faster",
     "whereToSee": "Complex and specific mosaic of bare ground and long and short turf – in chalk downland or heathland. <br /><br />Eggs are laid in bare soil next to clumps of grass. <br /><br />Strictly southern species and very localised.",
     "whenToSee": "Adults present from July until autumn.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["long"],
     "similarSpecies": "Great Green Bush Cricket, Sicke-bearing Bush-cricket"
   },
   {
@@ -951,12 +823,8 @@
     "sounds": "None",
     "whereToSee": "Common species in the eastern Mediterranean, arrival in Britain as a vagrant or accidental import. Scattered records across the UK.",
     "whenToSee": "Adults have been found in Britain from late summer through to November.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Desert Locust, Migratory Locust"
   },
   {
@@ -982,12 +850,8 @@
     "sounds": "Series of loud, ringing chirps that come at a rate of several a second and can be heard from quite a long distance.",
     "whereToSee": "This species is not native to Britain and is bred in captivity as live food for reptiles. <br /><br />Temporary colonies sometimes build up from escapes or introductions, and are not associated with particular habitats. This species may turn up anywhere near to human habitation.",
     "whenToSee": "Can occur all year round.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Field Cricket"
   },
   {
@@ -1010,12 +874,8 @@
     "sounds": "The song is an indistinct tzzp… tzzp…",
     "whereToSee": "Warmth loving, living in scrub and grassland.",
     "whenToSee": "Adults present from August onwards.",
-    "mainColour": [
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["green"],
+    "adultWings": ["long"],
     "similarSpecies": "Great Green Bush-cricket, Lng-winged Conehead"
   },
   {
@@ -1040,12 +900,8 @@
     "sounds": "Short burst of rapid ticking.",
     "whereToSee": "The native habitat of this species is dry areas of scrub and desert. <br /><br />It occurs in Britain as a rare vagrant or as an escape from pet shops, where it is commonly stocked as live reptile food. <br /><br />Southern England.",
     "whenToSee": "Adults appear late summer to early autumn, though escapes may occur all year round.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Egyptian Grasshopper, Migratory Locust"
   },
   {
@@ -1068,12 +924,8 @@
     "sounds": "Short burst of rapid ticking.",
     "whereToSee": "Most records are from SW England.",
     "whenToSee": "True vagrants are most likely to arrive on warm south-easterly winds in late summer or early autumn. Escapes may occur all year round.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Desert Locust, Egyptian Grasshopper"
   },
   {
@@ -1097,13 +949,8 @@
     "sounds": "Unobtrusive series of chirps in bursts of 1-4 seconds duration.",
     "whereToSee": "Dry grassy slopes above the sea around rocky outcrops and in vegetated sand dunes. Short turf (5-10 cm) often with heather (Calluna vulgaris) or western gorse (Ulex galii). <br /><br />Only found on the Isle of Man.",
     "whenToSee": "Eggs hatch in May and adults appear in early July to mid-October.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Common Green Grasshopper, Mottled Grasshopper, Field Grashopper"
   },
   {
@@ -1126,12 +973,8 @@
     "sounds": "Only heard during courtship; soft, short buzzing.",
     "whereToSee": "Coastal sand dunes and south facing cliffs, disused quarries and stony fields.",
     "whenToSee": "Adults appear in late July through to October and early November.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Lesser Blue-winged Grasshopper (Sphingonotus caerulans)"
   },
   {
@@ -1154,13 +997,8 @@
     "sounds": "A series of brief zzip sounds at the rate of one per second for up to 30 seconds",
     "whereToSee": "Hot sunny locations near the sea on dune systems, roadside verges and unimproved pastures. <br /><br />Found only on Jersey, not on mainland Britain or Ireland.",
     "whenToSee": "Nymphs hatch in May. <br /><br />Adults are present from early July to October.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "Lesser Marsh Grasshopper, Meadow Grasshopper"
   },
   {
@@ -1184,12 +1022,8 @@
     "sounds": "Pleasant melodious purr",
     "whereToSee": "The easiest way to find the cricket is to look in wild carrot flowers where they apparently sit and eat the flowers and young fruit. <br /><br />Known from Jersey since 2010. Two isolated records from England.",
     "whenToSee": "Adults present from August onwards.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "None"
   },
   {
@@ -1216,12 +1050,8 @@
     "antennae": "short",
     "whereToSee": "Typically occurs in long vegetation, under bark and under debris in almost any habtitat. <br /><br />Can be a minor garden pest through damage to petals of flowers, especially chrysanthemums and dahlias.",
     "whenToSee": "Four nymphal instars (continental populations have five). Adults can be observed throughout the year but are most noticeable in autumn (commonly shaken from dahlias and chrysanthemums in gardens). Females are capable of two generations. The female earwig",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short"],
     "similarSpecies": "Short-winged Earwig, Lesne's Earwig"
   },
   {
@@ -1246,12 +1076,8 @@
     "antennae": "short",
     "whereToSee": "Most records from the UK are on base rich soil. Beaten from trees and shrubs, in hedges particularly with nettles and rough vegetation. Also uses hollow stemmed plants such as hogweed. <br /><br />Native to UK, Southern and Central Europe.",
     "whenToSee": "Adults usually seen from July to October.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short"],
     "similarSpecies": "Short-winged Earwig, Common Earwi"
   },
   {
@@ -1278,12 +1104,8 @@
     "antennae": "short",
     "whereToSee": "Closely associated with dung, compost and rubbish heaps in urban and rural areas (anywhere where there is moist, consistent, natural heating from decaying organic matter). <br /><br />Native to Southern Europe and native or long established in the UK.",
     "whenToSee": "Life cycle of about three months. Breeding and development occur all year and all stages can be found together where there is moist, consistent, natural heating. Like Common Earwigs, they show considerable maternal care of their eggs and young and even f",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short"],
     "similarSpecies": "Common Earwig"
   },
   {
@@ -1305,12 +1127,8 @@
     "antennae": "short",
     "whereToSee": "Leaf litter in woodlands. It also climbs into trees and shrubs and may be found in flowerheads. <br /><br />Formerly common in hop gardens of Kent but has declined.",
     "whenToSee": "Active all year around except during periods of frost. Adults present from August to September but they are nocturnal.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short"],
     "similarSpecies": "Lesne's Earwig, Common Earwig"
   },
   {
@@ -1334,13 +1152,8 @@
     "antennae": "long",
     "whereToSee": "Mainly coastal occurring on sea cliffs, sand dunes and shingle beaches. Increase in inland records (dry heathland, chalk grassland and occasionally woodland) over the last 20 years. <br /><br />Native to UK, Central and Southern Europe.",
     "whenToSee": "Eggs hatch in late April or May and the nymphs (distinctive white patterns on the thorax) pass through five instars. Adults are present from July until early October.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short",
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short", "long"],
     "similarSpecies": "Dusky Cockroach, Tawny Cockroach"
   },
   {
@@ -1362,12 +1175,8 @@
     "antennae": "long",
     "whereToSee": "Scrub and coarse vegetation on woodland margins, commons and road verges. <br /><br />Native to UK, Central and South-Eastern Europe.",
     "whenToSee": "Two year life cycle with five nymphal instars. Adults present from end of May to the end of September. Nymphs overwinter in the fourth instar where they can be found in grass tussocks and deep leaf litter from October to March.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Lesser Cockroach, Tawny Cockroach"
   },
   {
@@ -1391,12 +1200,8 @@
     "antennae": "long",
     "whereToSee": "Lives in woodland, heathland and meadows, usually among leaf-litter, but can sometimes also be found in trees. <br /><br />Native to UK, Central and Southern Europe.",
     "whenToSee": "Two year life cycle with six nymphal instars. Adults are present from late June until October and even November. Nymphs overwinter in the fourth instar resuming development in April.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Dusky Cockroach, Lesser Cockroach"
   },
   {
@@ -1422,12 +1227,8 @@
     "antennae": "long",
     "whereToSee": "Despite its name, the species is probably native to Africa. <br /><br />In Britain it occurs on ships, in warehouses and glasshouses, especially around sea ports. Rarely in residential houses.",
     "whenToSee": "Indoors adults may be seen all year round.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "American Cockroach"
   },
   {
@@ -1453,13 +1254,8 @@
     "antennae": "long",
     "whereToSee": "Native to Africa and Asia. In Britain occurs only in houses, and in summer, on land fill sites.",
     "whenToSee": "Indoors adults may be seen all year round.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "short",
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["short", "long"],
     "similarSpecies": "None"
   },
   {
@@ -1484,12 +1280,8 @@
     "antennae": "long",
     "whereToSee": "Despite its name, the species is native to North Africa. In Britain occurs only in houses, and in summer, on land fill sites.",
     "whenToSee": "Indoors adults may be seen all year round.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Tawny Cockroach"
   },
   {
@@ -1514,12 +1306,8 @@
     "antennae": "long",
     "whereToSee": "Despite its name, the species is native to Africa. It may have been introduced to Europe with sugarcane from Cuba. <br /><br />In Britain it occurs on ships, in warehouses and glasshouses, especially around sea ports. Rarely in residential houses.",
     "whenToSee": "Indoors adults may be seen all year round.",
-    "mainColour": [
-      "brown"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown"],
+    "adultWings": ["long"],
     "similarSpecies": "Australian Cockroach"
   },
   {
@@ -1541,13 +1329,8 @@
     "antennae": "short",
     "whereToSee": "Inhabiting uncut grassland and shrubs. <br /><br />Native to Southern and Central Europe, only found in the UK on one occasion in 1959 in East Sussex.",
     "whenToSee": "In the native range, adults appear from July to November.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "long"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["long"],
     "similarSpecies": "other species of mantis"
   },
   {
@@ -1570,13 +1353,8 @@
     "antennae": "short",
     "whereToSee": "Native to New Zealand. <br /><br />Recorded in the UK (predominantly Devon and Cornwall distribution). Two likely periods of introduction 1920’s and 1970’s.",
     "whenToSee": "Adult insects can be seen from April through to December.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["short"],
     "similarSpecies": "Prickly Stick-insect"
   },
   {
@@ -1598,13 +1376,8 @@
     "antennae": "short",
     "whereToSee": "Native to New Zealand. <br /><br />Recorded in the UK (predominantly Devon and Cornwall distribution).",
     "whenToSee": "Adult insects can be seen from April through to December.",
-    "mainColour": [
-      "brown",
-      "green"
-    ],
-    "adultWings": [
-      "short"
-    ],
+    "mainColour": ["brown", "green"],
+    "adultWings": ["short"],
     "similarSpecies": "Unarmed Stick-insect"
   }
 ]

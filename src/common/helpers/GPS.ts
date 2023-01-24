@@ -8,12 +8,13 @@ export type Location = {
   altitudeAccuracy?: number | null;
   name?: string;
   source?: string;
+  gridref?: string;
 };
 
 type Options = {
   callback: (err: null | Error, location?: Location) => void;
-  onUpdate: (location?: Location) => void;
-  accuracyLimit: number;
+  onUpdate?: (location?: Location) => void;
+  accuracyLimit?: number;
 };
 
 const GPS_ACCURACY_LIMIT = 100; // meters

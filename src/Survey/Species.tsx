@@ -19,10 +19,12 @@ const SpeciesSelect: FC<Props> = ({ sample }) => {
     goBack();
   }
 
+  const sampleGridRef = sample.attrs.location?.gridref?.slice(0, 4);
+
   return (
     <Page id="species-attr">
       <Header title="Species" />
-      <Main onSpeciesClick={onSelect} />
+      <Main sampleGridRef={sampleGridRef} onSpeciesClick={onSelect} />
     </Page>
   );
 };

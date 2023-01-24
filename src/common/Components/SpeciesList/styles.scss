@@ -109,8 +109,8 @@
   }
 
   ion-item-divider.item-divider-sticky {
-    padding: 0;
-    color: white;
+    padding: 0 !important;
+    color: white !important;
     width: 104%;
     z-index: 1000;
 
@@ -125,11 +125,11 @@
     }
 
     background: var(--ion-color-primary) !important;
+    &.species-now-in-area {
+      background: #3aa264 !important;
+    }
     &.species-now {
       background: #51735f !important;
-    }
-    &.species-moths {
-      background: #556786 !important;
     }
     &.species-additional {
       background: #696969 !important;

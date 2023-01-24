@@ -31,6 +31,7 @@ export interface SpeciesInfo {
   adultWings: string[];
   similarSpecies: string;
   whereToSee: string;
+  probabilityId: number;
 }
 
 interface Resource {

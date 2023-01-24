@@ -1,4 +1,5 @@
 import { FC, useState, SyntheticEvent } from 'react';
+import appModel from 'common/models/app';
 import { observer } from 'mobx-react';
 import {
   IonGrid,
@@ -11,8 +12,9 @@ import {
   IonCol,
   IonRow,
   IonLabel,
+  IonItemDivider,
 } from '@ionic/react';
-import { Main } from '@flumens';
+import { Main, InfoBackgroundMessage } from '@flumens';
 import {
   arrowBack,
   volumeHighOutline,
@@ -22,14 +24,61 @@ import clsx from 'clsx';
 import { animated, useSpring } from '@react-spring/web';
 import soundIcon from 'common/images/sound.png';
 import species, { Species } from 'common/data/species';
+import getProbabilities from 'common/data/species/probabilities';
+import getCurrentWeekNumber from 'helpers/weeks';
 import SpeciesProfile from './components/SpeciesProfile';
 import './styles.scss';
 
+const byName = (sp1: Species, sp2: Species) =>
+  sp1.commonName.localeCompare(sp2.commonName);
+
+const existing = (sp: any): sp is Species => !!sp;
+
+function organiseByProbability(allSpecies: Species[], sampleGridRef?: string) {
+  const location = sampleGridRef || appModel.attrs?.location?.gridref || {};
+
+  const currentLocation = location;
+  const currentWeek = getCurrentWeekNumber();
+
+  const [probsNowAndHere, probsHere, probsNow] = getProbabilities(
+    currentWeek,
+    currentLocation
+  );
+
+  const getSpeciesProfile = (id: string) => {
+    const byId = (sp: Species) => sp.id === id;
+    return allSpecies.find(byId);
+  };
+
+  const speciesHereAndNow: Species[] = probsNowAndHere
+    .map(getSpeciesProfile)
+    .filter(existing);
+
+  const speciesHere: Species[] = probsHere
+    .map(getSpeciesProfile)
+    .filter(existing)
+    .sort(byName);
+
+  const speciesNow: Species[] = probsNow
+    .map(getSpeciesProfile)
+    .filter(existing);
+
+  const notInProbableLists = (sp: Species) =>
+    !speciesHereAndNow.includes(sp) &&
+    !speciesHere.includes(sp) &&
+    !speciesNow.includes(sp);
+
+  const remainingSpecies = allSpecies.filter(notInProbableLists).sort(byName);
+
+  return [speciesHereAndNow, speciesHere, speciesNow, remainingSpecies];
+}
+
 type Props = {
   onSpeciesClick?: (sp: Species) => void;
+  sampleGridRef?: string;
 };
 
-const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
+const SpeciesList: FC<Props> = ({ onSpeciesClick, sampleGridRef }) => {
   const isSurvey = !!onSpeciesClick;
 
   const [speciesProfile, setSpeciesProfile] = useState<Species>();
@@ -162,13 +211,85 @@ const SpeciesList: FC<Props> = ({ onSpeciesClick }) => {
     );
   };
 
-  const getSpeciesTile = (sp: Species) => speciesTile(sp);
-  const speciesTiles = species.map(getSpeciesTile);
+  const getSpecies = () => {
+    const speciesData = [...species];
+
+    const { useProbabilitiesForGuide, useSmartSorting } = appModel.attrs;
+
+    const [speciesHereAndNow, speciesHere, speciesNow, remainingSpecies] =
+      organiseByProbability(speciesData, sampleGridRef);
+
+    const hasSpeciesHereAndNow = !!speciesHereAndNow.length;
+    const hasSpeciesHere = !!speciesHere.length;
+    const hasSpeciesNow = !!speciesNow.length;
+    const hasAdditional = !!remainingSpecies.length;
+
+    const alphabetically = (sp1: Species, sp2: Species) =>
+      sp1.commonName.localeCompare(sp2.commonName);
+
+    const speciesTiles = (speciesList: Species[]) =>
+      useSmartSorting
+        ? speciesList.map(speciesTile)
+        : speciesList.sort(alphabetically).map(speciesTile);
+
+    if (
+      !hasSpeciesHereAndNow &&
+      !hasSpeciesHere &&
+      !hasSpeciesNow &&
+      !hasAdditional
+    ) {
+      return (
+        <InfoBackgroundMessage>
+          Sorry, no species were found.
+        </InfoBackgroundMessage>
+      );
+    }
+
+    if (!useProbabilitiesForGuide) {
+      return speciesData.sort(alphabetically).map(speciesTile);
+    }
+
+    return (
+      <>
+        {hasSpeciesHereAndNow && (
+          <IonItemDivider className="species-now-in-area" sticky mode="md">
+            <IonLabel>Now in your area</IonLabel>
+          </IonItemDivider>
+        )}
+        {speciesTiles(speciesHereAndNow)}
+
+        {hasSpeciesNow && (
+          <IonItemDivider sticky className="species-now" mode="md">
+            <IonLabel>At this time of year</IonLabel>
+          </IonItemDivider>
+        )}
+        {speciesTiles(speciesNow)}
+
+        {hasSpeciesHere && (
+          <IonItemDivider sticky className="species-now" mode="md">
+            <IonLabel>In your area at other times of year</IonLabel>
+          </IonItemDivider>
+        )}
+        {speciesTiles(speciesHere)}
+
+        {hasAdditional && (
+          <IonItemDivider sticky className="species-additional" mode="md">
+            {hasSpeciesNow ? (
+              <IonLabel>At other times of year</IonLabel>
+            ) : (
+              <IonLabel>Species not recorded from your area</IonLabel>
+            )}
+          </IonItemDivider>
+        )}
+        {speciesTiles(remainingSpecies)}
+      </>
+    );
+  };
 
   return (
     <Main className="species-list">
       <IonGrid>
-        <IonRow>{speciesTiles}</IonRow>
+        <IonRow>{getSpecies()}</IonRow>
       </IonGrid>
 
       <IonModal isOpen={!!speciesProfile} backdropDismiss={false} mode="md">

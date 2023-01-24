@@ -74,11 +74,58 @@ const MenuController: FC = () => {
   const resetApp = useResetApp();
   const deleteUser = useDeleteUser();
 
+  const {
+    useSmartSorting,
+    useProbabilitiesForGuide,
+    useLocationForGuide,
+    location,
+  } = appModel.attrs;
+
   const resetApplication = () => resetApp();
 
   const { sendAnalytics } = appModel.attrs;
 
   const deleteAllSamplesWrap = () => deleteAllSamples(toast);
+
+  const onToggleGuideLocation = (checked: boolean) => {
+    onToggle('useLocationForGuide', checked);
+
+    if (!checked) {
+      // eslint-disable-next-line no-param-reassign
+      appModel.attrs.location = null;
+      appModel.updateCurrentLocation(false); // stops any current runs
+    } else {
+      appModel.updateCurrentLocation();
+    }
+
+    appModel.save();
+  };
+
+  const onToggleSmartSorting = (checked: boolean) =>
+    onToggle('useSmartSorting', checked);
+
+  const onToggleProbabilitiesForGuide = (checked: boolean) =>
+    onToggle('useProbabilitiesForGuide', checked);
+
+  const currentLocation = location && location.gridref;
+
+  const adminChangeLocation = (e: any) => {
+    if (!appModel.attrs.location) {
+      // eslint-disable-next-line no-param-reassign
+      appModel.attrs.location = {};
+    }
+
+    // eslint-disable-next-line no-param-reassign
+    appModel.attrs.location.gridref = e.target.value;
+    appModel.save();
+  };
+  const adminChangeWeek = (e: any) => {
+    const currentWeek = parseInt(e.target.value, 10);
+    if (currentWeek > 53) return;
+    (window as any).admin.currentWeek = currentWeek;
+    console.log('setting week', (window as any).admin.currentWeek);
+  };
+
   return (
     <Page id="settings">
       <Header title="Settings" />
@@ -89,6 +136,16 @@ const MenuController: FC = () => {
         sendAnalytics={sendAnalytics}
         onToggle={onToggle}
         deleteAllSamples={deleteAllSamplesWrap}
+        useProbabilitiesForGuide={useProbabilitiesForGuide}
+        onToggleGuideLocation={onToggleGuideLocation}
+        onToggleProbabilitiesForGuide={onToggleProbabilitiesForGuide}
+        onToggleSmartSorting={onToggleSmartSorting}
+        useSmartSorting={useSmartSorting}
+        currentLocation={currentLocation}
+        useLocationForGuide={useLocationForGuide}
+        // admin controls
+        adminChangeLocation={adminChangeLocation}
+        adminChangeWeek={adminChangeWeek}
       />
     </Page>
   );

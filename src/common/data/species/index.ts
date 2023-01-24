@@ -40,6 +40,7 @@ interface Resource {
   map?: string;
   sonogram?: string;
   sound?: any;
+  lifecycle?: any;
 }
 
 interface Photos {

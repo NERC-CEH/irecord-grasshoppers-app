@@ -4,6 +4,7 @@ import sound from './longcone_sound.mp3';
 import sonogram from './longcone_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './longcone_descriptionImg.jpg';
+import lifecycle from './longcone_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

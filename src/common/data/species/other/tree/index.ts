@@ -4,6 +4,7 @@ import sound from './tree_sound.mp3';
 import sonogram from './tree_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './tree_descriptionImg.jpg';
+import lifecycle from './tree_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

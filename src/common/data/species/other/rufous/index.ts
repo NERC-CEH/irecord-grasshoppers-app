@@ -4,6 +4,7 @@ import sound from './rufous_sound.mp3';
 import sonogram from './rufous_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './rufous_descriptionImg.jpg';
+import lifecycle from './rufous_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

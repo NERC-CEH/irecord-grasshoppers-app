@@ -4,6 +4,7 @@ import sound from './greatgreen_sound.mp3';
 import sonogram from './greatgreen_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './greatgreen_descriptionImg.jpg';
+import lifecycle from './greatgreen_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

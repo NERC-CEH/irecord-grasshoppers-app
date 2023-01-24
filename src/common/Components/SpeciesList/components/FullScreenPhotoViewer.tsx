@@ -3,6 +3,7 @@ import { FC } from 'react';
 import clsx from 'clsx';
 import { Species } from 'common/data/species';
 import { Gallery, useOnHideModal } from '@flumens';
+import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '@ionic/react/css/ionic-swiper.css';
@@ -14,6 +15,7 @@ type Props = {
   showGallery?: number;
   showMap: boolean;
   showSpeciesDescription: boolean;
+  showSpeciesLifecycle: boolean;
 };
 
 const FullScreenPhotoViewer: FC<Props> = ({
@@ -22,6 +24,7 @@ const FullScreenPhotoViewer: FC<Props> = ({
   showGallery,
   showMap,
   showSpeciesDescription,
+  showSpeciesLifecycle,
 }) => {
   let items: any = [];
   let initialSlide = 0;
@@ -52,9 +55,25 @@ const FullScreenPhotoViewer: FC<Props> = ({
     items.push({ src: species.descriptionImg });
   }
 
+  if (showSpeciesLifecycle) {
+    pageTitle = 'Lifechart';
+
+    const lifechart = (
+      <SwiperSlide key={species.lifecycle}>
+        <div style={{ width: '95vh' }}>
+          <img src={species.lifecycle} style={{ transform: 'rotate(90deg)' }} />
+        </div>
+      </SwiperSlide>
+    );
+    items.push({ item: lifechart });
+  }
+
   const isOpen =
     !!items.length &&
-    (Number.isInteger(showGallery) || showMap || showSpeciesDescription);
+    (Number.isInteger(showGallery) ||
+      showMap ||
+      showSpeciesDescription ||
+      showSpeciesLifecycle);
 
   return (
     <Gallery

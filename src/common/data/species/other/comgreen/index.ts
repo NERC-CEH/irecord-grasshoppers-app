@@ -4,6 +4,7 @@ import sound from './comgreen_sound.mp3';
 import sonogram from './comgreen_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './comgreen_descriptionImg.jpg';
+import lifecycle from './comgreen_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

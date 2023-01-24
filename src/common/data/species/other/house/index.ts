@@ -4,6 +4,7 @@ import sound from './house_sound.mp3';
 import sonogram from './house_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './house_descriptionImg.jpg';
+import lifecycle from './house_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

@@ -27,6 +27,7 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
   const [showGallery, setShowGallery] = useState<number>();
   const [showMap, setShowMap] = useState(false);
   const [showSpeciesDescription, setShowSpeciesDescription] = useState(false);
+  const [showSpeciesLifecycle, setShowSpeciesLifecycle] = useState(false);
 
   useOnBackButton(onClose);
 
@@ -35,8 +36,11 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
   const showPhotoInFullScreen = (index: number) => setShowGallery(index);
 
   const showMapInFullScreen = () => setShowMap(true);
+
   const showSpeciesDescriptionInFullScreen = () =>
     setShowSpeciesDescription(true);
+
+  const showLifecycleInFullScreen = () => setShowSpeciesLifecycle(true);
 
   const playSoundWrap = (e: SyntheticEvent) => playSound(e, species);
 
@@ -91,6 +95,7 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
     setShowGallery(undefined);
     setShowMap(false);
     setShowSpeciesDescription(false);
+    setShowSpeciesLifecycle(false);
   };
 
   return (
@@ -101,6 +106,7 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
         showGallery={showGallery}
         showMap={showMap}
         showSpeciesDescription={showSpeciesDescription}
+        showSpeciesLifecycle={showSpeciesLifecycle}
       />
 
       <Main id="species-profile">
@@ -156,6 +162,21 @@ const SpeciesProfile: FC<Props> = ({ species, onClose, playSound }) => {
               <p>
                 <T>{species.whenToSee}</T>
               </p>
+
+              {species.lifecycle && (
+                <div
+                  className="fullscreen-tappable map"
+                  onClick={showLifecycleInFullScreen}
+                >
+                  <IonImg
+                    src={species.lifecycle}
+                    className="species-description-image"
+                  />
+                  <div className="fullscreen-btn">
+                    <IonIcon src={expandOutline} slot="end" color="warning" />
+                  </div>
+                </div>
+              )}
             </>
           )}
 

@@ -4,6 +4,7 @@ import sound from './heathgrass_sound.mp3';
 import sonogram from './heathgrass_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './heathgrass_descriptionImg.jpg';
+import lifecycle from './heathgrass_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

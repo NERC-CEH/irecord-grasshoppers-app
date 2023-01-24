@@ -4,6 +4,7 @@ import sound from './fieldgrass_sound.mp3';
 import sonogram from './fieldgrass_sonogram.svg';
 import backgroundThumbnail from './thumbnail_background.png';
 import descriptionImg from './fieldgrass_descriptionImg.jpg';
+import lifecycle from './fieldgrass_lifecycle.jpg';
 
 export default {
   thumbnail,
@@ -12,4 +13,5 @@ export default {
   descriptionImg,
   sound,
   sonogram,
+  lifecycle,
 };

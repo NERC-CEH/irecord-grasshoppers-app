@@ -4,8 +4,6 @@
   --padding-top: 0;
   --padding-bottom: 0;
 
-  --padding-top: env(safe-area-inset-top) !important;
-
   ion-card-header {
     display: flex;
     justify-content: space-between;

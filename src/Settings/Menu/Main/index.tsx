@@ -265,7 +265,7 @@ const MenuMain: FC<Props> = ({
             className={clsx(!useProbabilitiesForGuide && 'disabled')}
           >
             Sort the species using probability information. Disabling it will
-            default to alphabetical sorting.
+            sort by species type and commonness.
           </InfoMessage>
         </div>
 

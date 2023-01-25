@@ -32,6 +32,8 @@ export interface SpeciesInfo {
   similarSpecies: string;
   whereToSee: string;
   probabilityId: number;
+  type: number;
+  commonness: number;
 }
 
 interface Resource {

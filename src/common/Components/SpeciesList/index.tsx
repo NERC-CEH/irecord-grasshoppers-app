@@ -29,8 +29,10 @@ import getCurrentWeekNumber from 'helpers/weeks';
 import SpeciesProfile from './components/SpeciesProfile';
 import './styles.scss';
 
-const byName = (sp1: Species, sp2: Species) =>
-  sp1.commonName.localeCompare(sp2.commonName);
+const byType = (sp1: Species, sp2: Species) => sp1.type - sp2.type;
+
+const byTypeAndCommonness = (sp1: Species, sp2: Species) =>
+  byType(sp1, sp2) || sp2.commonness - sp1.commonness;
 
 const existing = (sp: any): sp is Species => !!sp;
 
@@ -52,23 +54,27 @@ function organiseByProbability(allSpecies: Species[], sampleGridRef?: string) {
 
   const speciesHereAndNow: Species[] = probsNowAndHere
     .map(getSpeciesProfile)
-    .filter(existing);
+    .filter(existing)
+    .sort(byType);
 
   const speciesHere: Species[] = probsHere
     .map(getSpeciesProfile)
     .filter(existing)
-    .sort(byName);
+    .sort(byType);
 
   const speciesNow: Species[] = probsNow
     .map(getSpeciesProfile)
-    .filter(existing);
+    .filter(existing)
+    .sort(byType);
 
   const notInProbableLists = (sp: Species) =>
     !speciesHereAndNow.includes(sp) &&
     !speciesHere.includes(sp) &&
     !speciesNow.includes(sp);
 
-  const remainingSpecies = allSpecies.filter(notInProbableLists).sort(byName);
+  const remainingSpecies = allSpecies
+    .filter(notInProbableLists)
+    .sort(byTypeAndCommonness);
 
   return [speciesHereAndNow, speciesHere, speciesNow, remainingSpecies];
 }
@@ -224,13 +230,10 @@ const SpeciesList: FC<Props> = ({ onSpeciesClick, sampleGridRef }) => {
     const hasSpeciesNow = !!speciesNow.length;
     const hasAdditional = !!remainingSpecies.length;
 
-    const alphabetically = (sp1: Species, sp2: Species) =>
-      sp1.commonName.localeCompare(sp2.commonName);
-
     const speciesTiles = (speciesList: Species[]) =>
       useSmartSorting
         ? speciesList.map(speciesTile)
-        : speciesList.sort(alphabetically).map(speciesTile);
+        : speciesList.sort(byTypeAndCommonness).map(speciesTile);
 
     if (
       !hasSpeciesHereAndNow &&
@@ -246,7 +249,7 @@ const SpeciesList: FC<Props> = ({ onSpeciesClick, sampleGridRef }) => {
     }
 
     if (!useProbabilitiesForGuide) {
-      return speciesData.sort(alphabetically).map(speciesTile);
+      return speciesData.sort(byTypeAndCommonness).map(speciesTile);
     }
 
     return (

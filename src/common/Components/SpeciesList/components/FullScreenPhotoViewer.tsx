@@ -60,7 +60,7 @@ const FullScreenPhotoViewer: FC<Props> = ({
 
     const lifechart = (
       <SwiperSlide key={species.lifecycle}>
-        <div style={{ width: '95vh' }}>
+        <div style={{ width: '88vh' }}>
           <img src={species.lifecycle} style={{ transform: 'rotate(90deg)' }} />
         </div>
       </SwiperSlide>

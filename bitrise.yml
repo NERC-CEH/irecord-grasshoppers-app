@@ -19,28 +19,28 @@ trigger_map:
   - push_branch: '*'
     workflow: ci
 workflows:
-  # android:
-  #   steps:
-  #     - change-android-versioncode-and-versionname@1:
-  #         inputs:
-  #           - build_gradle_path: $BITRISE_SOURCE_DIR/android/app/build.gradle
-  #           - version_code_offset: '2000'
-  #           - new_version_name: $NPM_PACKAGE_VERSION
-  #     - android-build@0:
-  #         inputs:
-  #           - module: app
-  #           - variant: release\ndebug
-  #           - build_type: aab
-  #           - project_location: $BITRISE_SOURCE_DIR/android
-  # - sign-apk@1:
-  #     inputs:
-  #       - debuggable_permitted: 'false'
-  #       - verbose_log: 'true'
-  #       - android_app: $BITRISE_AAB_PATH
+  android:
+    steps:
+      - change-android-versioncode-and-versionname@1:
+          inputs:
+            - build_gradle_path: $BITRISE_SOURCE_DIR/android/app/build.gradle
+            - version_code_offset: '2000'
+            - new_version_name: $NPM_PACKAGE_VERSION
+      - android-build@0:
+          inputs:
+            - module: app
+            - variant: release\ndebug
+            - build_type: aab
+            - project_location: $BITRISE_SOURCE_DIR/android
+      - sign-apk@1:
+          inputs:
+            - debuggable_permitted: 'false'
+            - verbose_log: 'true'
+            - android_app: $BITRISE_AAB_PATH
   ci:
     before_run:
       - web
-      # - android
+      - android
       - ios
     after_run:
       - deploy
@@ -61,17 +61,17 @@ workflows:
           title: Create app artifact
           inputs:
             - notify_user_groups: none
-      # - google-play-deploy@3:
-      #     run_if: enveq "BUILD_ONLY" ""
-      #     inputs:
-      #       - package_name: $BITRISE_PROJECT_NAME
-      #       - service_account_json_key_path: $BITRISEIO_GOOGLE_SERVICE_KEY_URL
-      # - deploy-to-itunesconnect-application-loader@1:
-      #     run_if: enveq "BUILD_ONLY" ""
-      #     inputs:
-      #       - password: $ITUNES_CONNECT_PASS
-      #       - app_password: $ITUNES_CONNECT_APP_PASS
-      #       - itunescon_user: $ITUNES_CONNECT_USER
+      - google-play-deploy@3:
+          run_if: enveq "BUILD_ONLY" ""
+          inputs:
+            - package_name: $BITRISE_PROJECT_NAME
+            - service_account_json_key_path: $BITRISEIO_GOOGLE_SERVICE_KEY_URL
+      - deploy-to-itunesconnect-application-loader@1:
+          run_if: enveq "BUILD_ONLY" ""
+          inputs:
+            - password: $ITUNES_CONNECT_PASS
+            - app_password: $ITUNES_CONNECT_APP_PASS
+            - itunescon_user: $ITUNES_CONNECT_USER
       - script@1:
           title: Git Tag
           inputs:
